@@ -1,0 +1,186 @@
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+    */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+    display: block;
+    }
+    body {
+    line-height: 1;
+    }
+    ol, ul {
+    list-style: none;
+    }
+    blockquote, q {
+    quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+    content: '';
+    content: none;
+    }
+    table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+
+    html{
+    height:100%;
+    }
+
+    body{
+    font-family:'Nunito Sans', sans-serif ;  
+    background-color:#C6C5B9;
+    height: 100%;   
+    box-sizing: border-box;  
+    }
+    .lineRight{
+        border-right:1px solid #546A7B;
+    }
+    .lineLeft{
+        border-left:1px solid #546A7B;
+    }
+    .name{
+        font-size: xx-large;
+    }
+    .contactInfo p{
+        padding:20px;
+        border-bottom:1px solid #546A7B;
+        text-align: center;
+    }  
+    .pageContainer{
+    width:100%;
+    flex-direction: column;
+    margin:0 auto;
+    align-items: center;
+    justify-content: center;
+    }
+    .callOuts{
+        font-weight: bold;
+    }
+      
+    .pageContainer .header{
+    position:fixed;
+    width: 100%;
+    background-color: #393D3F !important;
+    }
+    .pageContainer .mainImage{
+    background: url('/static/img/bgHeader.jpg')no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+    display:flex;
+    justify-content: center;
+    }
+    .pageContainer .mainSectionContent
+    {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    margin:0 auto;
+
+    }
+    .pageContainer .mainImage .intro-lead-in {
+    font-size: 39px;
+    font-style: italic;
+    margin-bottom: 25px;
+    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color:white;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    display:flex;
+    margin-top:130px;
+    }
+    .sectionHeading {
+    justify-content: center;
+    align-self: center;
+    width: 300px;
+    text-align: center;
+    background-color: #546A7B;
+    } 
+    .sectionHeading .sectionTitle{
+    font-size: 45px;
+    color:white;
+    }
+    .aboutMe,
+    .resume,
+    .contactInfo,
+    .blogPost{
+    background-image: url("/static/img/gl.jpg");
+    }
+    .aboutMe p{
+        padding:15px;
+    }
+    .reduceForLines{
+        padding:20px;
+    }
+    .vertLine{
+    border-right:1px solid #546A7B;
+    min-height:60px;
+    width:1px;
+    align-self: center;
+    }
+    .horizontalRight{
+    border-top:1px solid #546A7B;
+    width: 50%;
+    height:1px;
+    align-self: flex-end;
+    margin-right:1px;
+    }
+    .horizontalLeft{
+    border-top:1px solid #546A7B;
+    width: 50%;
+    height:1px;
+    align-self: flex-start;
+    margin-right:1px;
+    }
+
+    .navigation{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:100%;
+    }
+    .navigation a{
+    text-decoration: none;
+    padding:20px;
+    color:white;
+    }
+
+
+    @media (min-width:800px)
+    {
+    .intro-lead-in {
+        margin-top:0px;
+    }
+    .navigation{
+        justify-content: flex-end;        
+    }
+
+    }
