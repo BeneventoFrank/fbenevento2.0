@@ -104,7 +104,7 @@
         justify-content: center;
     }
     .pageContainer .mainImage{
-    background: url('/static/img/bgHeader.jpg')no-repeat center center fixed; 
+    background: url('../img/bgHeader.jpg')no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -148,7 +148,7 @@
     .resume,
     .contactInfo,
     .blogPost{
-    background-image: url("/static/img/gl.jpg");
+    background-image: url("../img/gl.jpg");
     }
     .aboutMe p{
         padding:15px;
