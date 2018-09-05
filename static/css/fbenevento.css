@@ -250,6 +250,11 @@
         width: 100%;
         justify-content: space-around;
     }
+    .jobDescription .jobResponsibilitiesList{
+        list-style-type: square;
+        margin-left:52px;
+   } 
+
 
     @media (min-width:800px)
     {
