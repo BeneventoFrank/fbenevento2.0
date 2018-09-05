@@ -88,7 +88,9 @@
     .callOuts{
         font-weight: bold;
     }
-      
+    .techList{
+        line-height: 1.2;
+    } 
     .pageContainer .header{
     position:fixed;
     width: 100%;
@@ -237,7 +239,17 @@
    
      font-weight:bold;
      }
+     .jobContainer .techStackSection{
+         display:flex;
+         flex-direction: column;
+         width: 100%;
 
+     }
+     .jobContainer .techStackSection .techStackList{
+        display:flex;
+        width: 100%;
+        justify-content: space-around;
+    }
 
     @media (min-width:800px)
     {
