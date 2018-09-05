@@ -109,8 +109,9 @@
     .resume .resumeContent{
         display:flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
+
     }
     .resume .resumeContent .resumeHeader{
         margin-top:10px;
@@ -253,11 +254,38 @@
     .jobDescription .jobResponsibilitiesList{
         list-style-type: square;
         margin-left:52px;
-   } 
+    } 
+    .fullViewOnly
+    {
+        display: none;
+    }
+    .mobileViewOnly{
+        display: inline-flex;
+    }
+    .addInfoText{
+        font-weight: bold;
+        margin-top:20px;
+        margin-left:10px;
+        margin-right:10px;
+        margin-bottom:40px;
+        text-align: center;
+    }
+
+
+
+
 
 
     @media (min-width:800px)
     {
+    .fullViewOnly
+    {
+        display: inline-flex;
+    }
+    .mobileViewOnly{
+        display: none;
+    }
+    
     .jobContainer {
         justify-content: space-between;
     }
