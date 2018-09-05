@@ -310,8 +310,9 @@
     }
     
     .resume .resumeContent .resumeHeader{
-        width:100%;
+        width:50%;
         align-items: center;
+
     }
     
     .pageContainer .mainImage .intro-lead-in {
