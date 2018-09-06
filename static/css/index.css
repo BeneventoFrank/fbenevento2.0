@@ -131,7 +131,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Julius Sans One';
   background-color: #C6C5B9;
   height: 100%;
   box-sizing: border-box;
@@ -332,6 +332,9 @@ header nav a {
     text-align: Left;
   }
 }
+.mainSectionContent .resume .resumeContent .resumeSummary {
+  width: 100%;
+}
 .mainSectionContent .resume .resumeContent .resumeSummary .summaryText {
   margin: 10px;
 }
@@ -395,5 +398,5 @@ header nav a {
 }
 footer {
   width: 100%;
-  background-color: #546A7B !important;
+  background-color: #546A7B;
 }

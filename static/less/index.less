@@ -48,13 +48,13 @@ table {
 }
 
 //variables
-@FontStack:"'Julius Sans One', sans-serif";
+@fontStack:'Julius Sans One';
 @backgroundColor:#C6C5B9;
 @textColor:#325050;
 @accentColor:#546A7B;
 @headerColor:#393D3F;
-@introText:"'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif";
-@sectionBackground:'url("../img/gl.jpg")';
+@introText:'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@sectionBackground:url("../img/gl.jpg");
 @gradientHeader:'Linear-gradient(Black,@headerColor)';
 
 
@@ -221,7 +221,7 @@ header{
     margin:0 auto;
 
     .aboutMe{
-        background-image: url("../img/gl.jpg");
+        background-image: @sectionBackground;
         line-height:4rem;
         font-size:1.8rem;
         
@@ -232,7 +232,7 @@ header{
     .resume{
         background-image: @sectionBackground;
         line-height:4rem;
-        font-size:1.8rem;        
+        font-size:1.8rem;
 
         .resumeContent{
             display:flex;
@@ -276,6 +276,7 @@ header{
     
             }
             .resumeSummary{
+                width:100%;    
 
                 .summaryText{
                     margin:10px;
