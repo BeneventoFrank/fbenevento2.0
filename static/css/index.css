@@ -145,7 +145,7 @@ body {
 }
 .link {
   color: #325050;
-  text-decoration: underline dotted #325050;
+  text-decoration: underline solid #325050;
   margin: 5px;
 }
 .vertLine {
@@ -215,6 +215,9 @@ body {
 }
 .name {
   font-size: xx-large;
+}
+.hideLinkButton {
+  display: none;
 }
 .pageContainer {
   width: 100%;
@@ -343,6 +346,12 @@ header nav a {
 }
 .mainSectionContent .resume .resumeContent .resumeSummary .projects .projectHeader {
   font-weight: bold;
+}
+.mainSectionContent .resume .resumeContent .resumeSummary .addJobExp {
+  text-align: center;
+  font-size: 3rem;
+  padding: 20px;
+  color: #325050;
 }
 .mainSectionContent .resume .resumeContent .resumeSummary .jobContainer {
   margin: 10px;

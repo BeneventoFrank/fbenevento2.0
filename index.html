@@ -195,9 +195,9 @@
 
                                 </section>
                                 <section class='mobileViewOnly'>
-                                        <p class="addInfoText">Additional Job Experience Available Upon Request</p>
+                                        <a class='addJobExp' id='showAddJobExp' href="#" onclick="return(false)">View Additional Experience</a>
                                 </section>
-                                <section class="fullviewOnly">
+                                <section id="jobHistory2" class="fullviewOnly">
                                         <section class='jobContainer'>
                                             <div class='shrinkHeader'>
                                                 <p class='jobHeader'>Web Application Developer</p>
@@ -245,7 +245,7 @@
                                     </section>
 
                                 </section>                                
-                                <section class="fullviewOnly">
+                                <section id="jobHistory3" class="fullviewOnly">
                                         <section class='jobContainer'>
                                             <div class='shrinkHeader'>
                                                 <p class='jobHeader'>Implementations Programmer</p>
@@ -328,3 +328,15 @@
 </html>
 
 
+<script>
+
+    document.getElementById('showAddJobExp').addEventListener("click",function(){
+        let jobHistory2 = document.getElementById('jobHistory2');
+        let jobHistory3 = document.getElementById('jobHistory3');
+        jobHistory2.classList.remove("fullviewOnly");  
+        jobHistory3.classList.remove("fullviewOnly");
+
+        document.getElementById('showAddJobExp').classList.add('hideLinkButton');
+    })
+    
+</script>

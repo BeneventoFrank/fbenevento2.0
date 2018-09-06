@@ -55,8 +55,8 @@ table {
 @headerColor:#393D3F;
 @introText:'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 @sectionBackground:url("../img/gl.jpg");
-@gradientHeader:'Linear-gradient(Black,@headerColor)';
-
+@linkDecoration:underline solid @textColor;
+@minWidthForDesktop:1050px;
 
 //////////////////////
 
@@ -79,7 +79,7 @@ body{
 }
 .link{
     color:@textColor;
-    text-decoration: underline dotted @textColor;
+    text-decoration:@linkDecoration;
     margin:5px;
 }
 .vertLine{
@@ -88,19 +88,20 @@ body{
     width:1px;
     align-self: center;
 }
-.horizontalRight{
+
+.liner(@alignDirection){
     border-top:1px solid @accentColor;
     width: 50%;
     height:1px;
-    align-self: flex-end;
+    align-self: @alignDirection;
     margin-right:1px;
 }
+
+.horizontalRight{
+    .liner(flex-end)
+}
 .horizontalLeft{
-    border-top:1px solid @accentColor;
-    width: 50%;
-    height:1px;
-    align-self: flex-start;
-    margin-right:1px;
+    .liner(flex-start)    
 }
 .sectionHeading {
     justify-content: center;
@@ -127,7 +128,7 @@ body{
 .mobileViewOnly{
     display: inline-flex;
 
-    @media (min-width:1050px)
+    @media (min-width:@minWidthForDesktop)
     {
         .mobileViewOnly{
             display: none;
@@ -145,7 +146,7 @@ body{
 {
     display: none;
 
-    @media (min-width:1050px)
+    @media (min-width:@minWidthForDesktop)
     {
         display: inline-flex;
     }    
@@ -153,6 +154,11 @@ body{
 .name{
     font-size: xx-large;
 }
+.hideLinkButton{
+    display:none;
+}
+
+
 .pageContainer{
     width:100%;
     flex-direction: column;
@@ -160,6 +166,8 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+
 header{
     position:fixed;
     width: 100%;
@@ -172,7 +180,7 @@ header{
         width:100%;
         font-size:1.5rem;
         
-        @media (min-width:1050px){
+        @media (min-width:@minWidthForDesktop){
             justify-content: flex-end;        
         }
 
@@ -205,7 +213,7 @@ header{
         display:flex;
         margin-top:130px;
     }
-    @media (min-width:1050px){
+    @media (min-width:@minWidthForDesktop){
         .introLeadIn {
             font-size:5rem;
             margin-top:0px;
@@ -239,7 +247,7 @@ header{
             flex-direction: column;
             align-items:center;
 
-            @media (min-width:1050px){
+            @media (min-width:@minWidthForDesktop){
                 display:flex;
                 flex-direction: row;
                 align-items: flex-start;
@@ -253,7 +261,7 @@ header{
                 margin-bottom:20px;
                 padding:10px;
 
-                @media (min-width:1050px){
+                @media (min-width:@minWidthForDesktop){
                     width:50%;
                     align-items: center;
                 }
@@ -262,12 +270,12 @@ header{
                     width:200px;
                     height:200px;
                     border-radius: 50%;
-                    border:5px solid #546A7B;
+                    border:5px solid @accentColor;
                 }
                 .resumeHeaderText{
                     text-align:center;
 
-                    @media (min-width:1050px){
+                    @media (min-width:@minWidthForDesktop){
                         text-align:Left;                    
                     }
     
@@ -289,6 +297,12 @@ header{
                         font-weight: bold;
                     }                
                 }
+                .addJobExp{
+                    text-align: center;
+                    font-size: 3rem;
+                    padding:20px;
+                    color:@textColor;
+                }
                 .jobContainer{
                     margin:10px;
                     display:flex;
@@ -297,7 +311,7 @@ header{
                     @media (min-width:1050px){
                         justify-content: space-between;                        
                     }
-                    @media (min-width:1050px){
+                    @media (min-width:@minWidthForDesktop){
                         .shrinkHeader{
                             line-height: 2rem;
                         }                    
