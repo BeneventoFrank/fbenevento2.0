@@ -1,0 +1,399 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Julius Sans One', sans-serif;
+  background-color: #C6C5B9;
+  height: 100%;
+  box-sizing: border-box;
+  color: #325050;
+}
+.lineRight {
+  border-right: 1px solid #546A7B;
+}
+.lineLeft {
+  border-left: 1px solid #546A7B;
+}
+.link {
+  color: #325050;
+  text-decoration: underline dotted #325050;
+  margin: 5px;
+}
+.vertLine {
+  border-right: 1px solid #546A7B;
+  min-height: 60px;
+  width: 1px;
+  align-self: center;
+}
+.horizontalRight {
+  border-top: 1px solid #546A7B;
+  width: 50%;
+  height: 1px;
+  align-self: flex-end;
+  margin-right: 1px;
+}
+.horizontalLeft {
+  border-top: 1px solid #546A7B;
+  width: 50%;
+  height: 1px;
+  align-self: flex-start;
+  margin-right: 1px;
+}
+.sectionHeading {
+  justify-content: center;
+  align-self: center;
+  width: 300px;
+  text-align: center;
+  background-color: #546A7B;
+}
+.sectionTitle {
+  font-size: 4.5rem;
+  color: white;
+  padding: 10px;
+}
+.reduceForLines {
+  padding: 20px;
+}
+.resumeSubHeader {
+  font-size: 3rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.mobileViewOnly {
+  display: inline-flex;
+}
+@media (min-width: 1050px) {
+  .mobileViewOnly .mobileViewOnly {
+    display: none;
+  }
+}
+.callOuts {
+  font-weight: bold;
+}
+.techList {
+  line-height: 1.2;
+  margin-left: 30px;
+}
+.fullViewOnly {
+  display: none;
+}
+@media (min-width: 1050px) {
+  .fullViewOnly {
+    display: inline-flex;
+  }
+}
+.name {
+  font-size: xx-large;
+}
+.pageContainer {
+  width: 100%;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #393D3F;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 1.5rem;
+}
+@media (min-width: 1050px) {
+  header nav {
+    justify-content: flex-end;
+  }
+}
+header nav a {
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+}
+.mainImage {
+  background: url('../img/bgHeader-72k.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.mainImage .introLeadIn {
+  font-size: 4rem;
+  font-style: italic;
+  margin-bottom: 25px;
+  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: white;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  display: flex;
+  margin-top: 130px;
+}
+@media (min-width: 1050px) {
+  .mainImage .introLeadIn {
+    font-size: 5rem;
+    margin-top: 0px;
+  }
+}
+.mainSectionContent {
+  display: flex;
+  flex-direction: column;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+.mainSectionContent .aboutMe {
+  background-image: url("../img/gl.jpg");
+  line-height: 4rem;
+  font-size: 1.8rem;
+}
+.mainSectionContent .aboutMe p {
+  padding: 15px;
+}
+.mainSectionContent .resume {
+  background-image: url("../img/gl.jpg");
+  line-height: 4rem;
+  font-size: 1.8rem;
+}
+.mainSectionContent .resume .resumeContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1050px) {
+  .mainSectionContent .resume .resumeContent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+.mainSectionContent .resume .resumeContent .resumeHeader {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+@media (min-width: 1050px) {
+  .mainSectionContent .resume .resumeContent .resumeHeader {
+    width: 50%;
+    align-items: center;
+  }
+}
+.mainSectionContent .resume .resumeContent .resumeHeader .resumeImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #546A7B;
+}
+.mainSectionContent .resume .resumeContent .resumeHeader .resumeHeaderText {
+  text-align: center;
+}
+@media (min-width: 1050px) {
+  .mainSectionContent .resume .resumeContent .resumeHeader .resumeHeaderText {
+    text-align: Left;
+  }
+}
+.mainSectionContent .resume .resumeContent .resumeSummary .summaryText {
+  margin: 10px;
+}
+.mainSectionContent .resume .resumeContent .resumeSummary .projects {
+  margin: 10px;
+}
+.mainSectionContent .resume .resumeContent .resumeSummary .projects .projectHeader {
+  font-weight: bold;
+}
+.mainSectionContent .resume .resumeContent .resumeSummary .jobContainer {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 1050px) {
+  .mainSectionContent .resume .resumeContent .resumeSummary .jobContainer {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1050px) {
+  .mainSectionContent .resume .resumeContent .resumeSummary .jobContainer .shrinkHeader {
+    line-height: 2rem;
+  }
+}
+.mainSectionContent .resume .resumeContent .resumeSummary .jobContainer .techStackSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.mainSectionContent .resume .resumeContent .resumeSummary .jobContainer .techStackSection .techStackList {
+  display: flex;
+  width: 75%;
+  justify-content: space-around;
+}
+.mainSectionContent .resume .resumeContent .resumeSummary .jobContainer .jobResponsibilitiesList {
+  list-style-type: square;
+  margin-left: 52px;
+}
+.mainSectionContent .resume .resumeContent .resumeSummary .jobContainer .jobHeader {
+  font-weight: bold;
+}
+.mainSectionContent .resume .resumeContent .resumeSummary .addInfoText {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.contactInfo {
+  background-image: url("../img/gl.jpg");
+  font-size: 1.6rem;
+}
+.contactInfo p {
+  padding: 20px;
+  border-bottom: 1px solid #546A7B;
+  text-align: center;
+}
+.contactInfo p .name {
+  font-size: xx-large;
+}
+footer {
+  width: 100%;
+  background-color: #546A7B !important;
+}
