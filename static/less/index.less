@@ -47,46 +47,55 @@ table {
     border-spacing: 0;
 }
 
+//variables
+@FontStack:"'Julius Sans One', sans-serif";
+@backgroundColor:#C6C5B9;
+@textColor:#325050;
+@accentColor:#546A7B;
+@borderColor:#393D3F;
+@introText:"'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif";
+@sectionBackground:'url("../img/gl.jpg")';
+
+
+//////////////////////
+
 html{
     height:100%;
     font-size:62.5%
 }
-
 body{
-    font-family:'Julius Sans One', sans-serif;  
-    background-color:#C6C5B9;
+    font-family:@fontStack;  
+    background-color:@backgroundColor;
     height: 100%;   
     box-sizing: border-box; 
-    color:#325050;
+    color:@textColor;
 }
-
-
 .lineRight{
-    border-right:1px solid #546A7B;
+    border-right:1px solid @accentColor;
 }
 .lineLeft{
-    border-left:1px solid #546A7B;
+    border-left:1px solid @accentColor;
 }
 .link{
-    color:#325050;
-    text-decoration: underline dotted #325050;
+    color:@textColor;
+    text-decoration: underline dotted @textColor;
     margin:5px;
 }
 .vertLine{
-    border-right:1px solid #546A7B;
+    border-right:1px solid @accentColor;
     min-height:60px;
     width:1px;
     align-self: center;
 }
 .horizontalRight{
-    border-top:1px solid #546A7B;
+    border-top:1px solid @accentColor;
     width: 50%;
     height:1px;
     align-self: flex-end;
     margin-right:1px;
 }
 .horizontalLeft{
-    border-top:1px solid #546A7B;
+    border-top:1px solid @accentColor;
     width: 50%;
     height:1px;
     align-self: flex-start;
@@ -97,7 +106,7 @@ body{
     align-self: center;
     width: 300px;
     text-align: center;
-    background-color: #546A7B;
+    background-color: @accentColor;
 } 
 .sectionTitle{
     font-size: 4.5rem;
@@ -139,16 +148,10 @@ body{
     {
         display: inline-flex;
     }    
-
 } 
 .name{
     font-size: xx-large;
 }
-                
-
-
-
-
 .pageContainer{
     width:100%;
     flex-direction: column;
@@ -156,12 +159,10 @@ body{
     align-items: center;
     justify-content: center;
 }
-
-
 header{
     position:fixed;
     width: 100%;
-    background-color: #393D3F;
+    background-color: @borderColor;
 
     nav{
         display:flex;
@@ -195,7 +196,7 @@ header{
         font-size: 4rem;
         font-style: italic;
         margin-bottom: 25px;
-        font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-family: @introText;
         color:white;
         justify-content: center;
         align-self: center;
@@ -228,7 +229,7 @@ header{
         }        
     }
     .resume{
-        background-image: url("../img/gl.jpg");
+        background-image: @sectionBackground;
         line-height:4rem;
         font-size:1.8rem;        
 
@@ -331,18 +332,17 @@ header{
                     margin-bottom:40px;
                     text-align: center;
                 }
-
             }
         }
     }
 }
 .contactInfo{
-    background-image: url("../img/gl.jpg");
+    background-image: @sectionBackground;
     font-size: 1.6rem;
 }
 .contactInfo p{
     padding:20px;
-    border-bottom:1px solid #546A7B;
+    border-bottom:1px solid @accentColor;
     text-align: center;
     .name{
         font-size: xx-large;
@@ -350,6 +350,6 @@ header{
 }
 footer{
     width: 100%;
-    background-color: #546A7B !important;
+    background-color: @accentColor;
 }
 
