@@ -52,9 +52,10 @@ table {
 @backgroundColor:#C6C5B9;
 @textColor:#325050;
 @accentColor:#546A7B;
-@borderColor:#393D3F;
+@headerColor:#393D3F;
 @introText:"'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif";
 @sectionBackground:'url("../img/gl.jpg")';
+@gradientHeader:'Linear-gradient(Black,@headerColor)';
 
 
 //////////////////////
@@ -162,7 +163,7 @@ body{
 header{
     position:fixed;
     width: 100%;
-    background-color: @borderColor;
+    background-color: @headerColor;
 
     nav{
         display:flex;
