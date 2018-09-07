@@ -19,7 +19,6 @@ body{
 .link{
     color:@textColor;
     text-decoration:@linkDecoration;
-    margin:5px;
 }
 .vertLine{
     border-right:1px solid @accentColor;
@@ -63,12 +62,12 @@ body{
     margin-right:10px;
     margin-top:10px;
     margin-bottom:20px;
+    margin-left:10px;
 }
 .mobileViewOnly{
     display: inline-flex;
 
-    @media (min-width:@minWidthForDesktop)
-    {
+    @media @desktop{
         .mobileViewOnly{
             display: none;
         }
@@ -85,8 +84,7 @@ body{
 {
     display: none;
 
-    @media (min-width:@minWidthForDesktop)
-    {
+    @media @desktop{
         display: inline-flex;
     }    
 } 

@@ -146,7 +146,6 @@ body {
 .link {
   color: #325050;
   text-decoration: underline solid #325050;
-  margin: 5px;
 }
 .vertLine {
   border-right: 1px solid #546A7B;
@@ -189,11 +188,12 @@ body {
   margin-right: 10px;
   margin-top: 10px;
   margin-bottom: 20px;
+  margin-left: 10px;
 }
 .mobileViewOnly {
   display: inline-flex;
 }
-@media (min-width: 1050px) {
+@media (min-width:1050px) {
   .mobileViewOnly .mobileViewOnly {
     display: none;
   }
@@ -208,7 +208,7 @@ body {
 .fullViewOnly {
   display: none;
 }
-@media (min-width: 1050px) {
+@media (min-width:1050px) {
   .fullViewOnly {
     display: inline-flex;
   }
@@ -238,7 +238,7 @@ header nav {
   width: 100%;
   font-size: 1.5rem;
 }
-@media (min-width: 1050px) {
+@media (min-width:1050px) {
   header nav {
     justify-content: flex-end;
   }
@@ -270,7 +270,7 @@ header nav a {
   display: flex;
   margin-top: 130px;
 }
-@media (min-width: 1050px) {
+@media (min-width:1050px) {
   .mainImage .introLeadIn {
     font-size: 5rem;
     margin-top: 0px;
@@ -308,7 +308,7 @@ header nav a {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 1050px) {
+@media (min-width:1050px) {
   .mainSectionContent .resume .resumeContent {
     display: flex;
     flex-direction: row;
@@ -323,7 +323,7 @@ header nav a {
   margin-bottom: 20px;
   padding: 10px;
 }
-@media (min-width: 1050px) {
+@media (min-width:1050px) {
   .mainSectionContent .resume .resumeContent .resumeHeader {
     width: 50%;
     align-items: center;
@@ -338,7 +338,7 @@ header nav a {
 .mainSectionContent .resume .resumeContent .resumeHeader .resumeHeaderText {
   text-align: center;
 }
-@media (min-width: 1050px) {
+@media (min-width:1050px) {
   .mainSectionContent .resume .resumeContent .resumeHeader .resumeHeaderText {
     text-align: Left;
   }
@@ -361,8 +361,13 @@ header nav a {
   padding: 20px;
   color: #325050;
 }
+@media (min-width:1050px) {
+  .mainSectionContent .resume .resumeContent .resumeSummary .addJobExp {
+    display: none;
+  }
+}
 .mainSectionContent .resume .resumeContent .resumeSummary .jobContainer {
-  margin: 10px;
+  margin: 10px 10px 10px 20px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -371,7 +376,7 @@ header nav a {
     justify-content: space-between;
   }
 }
-@media (min-width: 1050px) {
+@media (min-width:1050px) {
   .mainSectionContent .resume .resumeContent .resumeSummary .jobContainer .shrinkHeader {
     line-height: 2rem;
   }
