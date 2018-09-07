@@ -326,7 +326,7 @@ header nav a {
 @media (min-width:1050px) {
   .mainSectionContent .resume .resumeContent .resumeHeader {
     width: 50%;
-    align-items: center;
+    align-items: flex-start;
   }
 }
 .mainSectionContent .resume .resumeContent .resumeHeader .resumeImage {
@@ -341,6 +341,62 @@ header nav a {
 @media (min-width:1050px) {
   .mainSectionContent .resume .resumeContent .resumeHeader .resumeHeaderText {
     text-align: Left;
+  }
+}
+.mainSectionContent .resume .resumeContent .resumeHeader .skillSection {
+  width: 100%;
+  display: none;
+}
+.mainSectionContent .resume .resumeContent .resumeHeader .skillSection .name {
+  margin-top: 80px;
+}
+@media (min-width:1050px) {
+  .mainSectionContent .resume .resumeContent .resumeHeader .skillSection {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainSectionContent .resume .resumeContent .resumeHeader .skillSection .skillsGrid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .mainSectionContent .resume .resumeContent .resumeHeader .skillSection .skillsGrid .language {
+    width: 100px;
+  }
+  .mainSectionContent .resume .resumeContent .resumeHeader .skillSection .skillsGrid .skillLevel {
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+  }
+  .mainSectionContent .resume .resumeContent .resumeHeader .skillSection .skillsGrid .skillLevel .skillNumber {
+    text-align: right;
+    font-size: 1rem;
+    width: 70%;
+    height: 17px;
+    padding-left: 30px;
+  }
+  .mainSectionContent .resume .resumeContent .resumeHeader .skillSection .skillsGrid .skillLevel .col-6 {
+    width: 60%;
+    height: 10px;
+    background-color: #546A7B;
+    border-radius: 15px 50px 50px 0px;
+  }
+  .mainSectionContent .resume .resumeContent .resumeHeader .skillSection .skillsGrid .skillLevel .col-7 {
+    width: 70%;
+    height: 10px;
+    background-color: #546A7B;
+    border-radius: 15px 50px 50px 0px;
+  }
+  .mainSectionContent .resume .resumeContent .resumeHeader .skillSection .skillsGrid .skillLevel .col-8 {
+    width: 80%;
+    height: 10px;
+    background-color: #546A7B;
+    border-radius: 15px 50px 50px 0px;
+  }
+  .mainSectionContent .resume .resumeContent .resumeHeader .skillSection .skillsGrid .skillLevel .col-9 {
+    width: 90%;
+    height: 10px;
+    background-color: #546A7B;
+    border-radius: 15px 50px 50px 0px;
   }
 }
 .mainSectionContent .resume .resumeContent .resumeSummary {
