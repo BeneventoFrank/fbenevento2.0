@@ -174,6 +174,7 @@ body {
   width: 300px;
   text-align: center;
   background-color: #546A7B;
+  border-radius: 5px;
 }
 .sectionTitle {
   font-size: 4.5rem;
@@ -284,6 +285,7 @@ header nav a {
 }
 .mainSectionContent .aboutMe {
   background-image: url("../img/gl.jpg");
+  border-radius: 5px;
   line-height: 4rem;
   font-size: 1.8rem;
 }
@@ -292,6 +294,7 @@ header nav a {
 }
 .mainSectionContent .resume {
   background-image: url("../img/gl.jpg");
+  border-radius: 5px;
   line-height: 4rem;
   font-size: 1.8rem;
 }
@@ -395,6 +398,7 @@ header nav a {
 }
 .contactInfo {
   background-image: url("../img/gl.jpg");
+  border-radius: 5px;
   font-size: 1.6rem;
 }
 .contactInfo p {

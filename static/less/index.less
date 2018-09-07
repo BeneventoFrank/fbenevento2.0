@@ -57,9 +57,17 @@ table {
 @sectionBackground:url("../img/gl.jpg");
 @linkDecoration:underline solid @textColor;
 @minWidthForDesktop:1050px;
-
+@border-radius:5px;
 //////////////////////
 
+
+//mixins
+.backgroundImageAndBorder(){
+    background-image: @sectionBackground;
+    border-radius:@border-radius;
+}
+
+////////////
 html{
     height:100%;
     font-size:62.5%
@@ -109,6 +117,7 @@ body{
     width: 300px;
     text-align: center;
     background-color: @accentColor;
+    border-radius:@border-radius;
 } 
 .sectionTitle{
     font-size: 4.5rem;
@@ -223,13 +232,14 @@ header{
     
 }
 .mainSectionContent{
+    
     display: flex;
     flex-direction: column;
     max-width: 1020px;
     margin:0 auto;
 
     .aboutMe{
-        background-image: @sectionBackground;
+        .backgroundImageAndBorder();
         line-height:4rem;
         font-size:1.8rem;
         
@@ -238,7 +248,7 @@ header{
         }        
     }
     .resume{
-        background-image: @sectionBackground;
+        .backgroundImageAndBorder();
         line-height:4rem;
         font-size:1.8rem;
 
@@ -353,7 +363,7 @@ header{
     }
 }
 .contactInfo{
-    background-image: @sectionBackground;
+    .backgroundImageAndBorder();
     font-size: 1.6rem;
 }
 .contactInfo p{
