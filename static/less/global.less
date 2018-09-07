@@ -1,0 +1,107 @@
+//global styles
+html{
+    height:100%;
+    font-size:62.5%
+}
+body{
+    font-family:@fontStack;  
+    background-color:@backgroundColor;
+    height: 100%;   
+    box-sizing: border-box; 
+    color:@textColor;
+}
+.lineRight{
+    border-right:1px solid @accentColor;
+}
+.lineLeft{
+    border-left:1px solid @accentColor;
+}
+.link{
+    color:@textColor;
+    text-decoration:@linkDecoration;
+    margin:5px;
+}
+.vertLine{
+    border-right:1px solid @accentColor;
+    min-height:60px;
+    width:1px;
+    align-self: center;
+}
+
+.liner(@alignDirection){
+    border-top:1px solid @accentColor;
+    width: 50%;
+    height:1px;
+    align-self: @alignDirection;
+    margin-right:1px;
+}
+
+.horizontalRight{
+    .liner(flex-end)
+}
+.horizontalLeft{
+    .liner(flex-start)    
+}
+.sectionHeading {
+    justify-content: center;
+    align-self: center;
+    width: 300px;
+    text-align: center;
+    background-color: @accentColor;
+    border-radius:@border-radius;
+} 
+.sectionTitle{
+    font-size: 4.5rem;
+    color:white;
+    padding:10px;
+}
+.reduceForLines{
+    padding:20px;
+}
+.resumeSubHeader{
+    font-size:3rem;
+    margin-right:10px;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+.mobileViewOnly{
+    display: inline-flex;
+
+    @media (min-width:@minWidthForDesktop)
+    {
+        .mobileViewOnly{
+            display: none;
+        }
+    }    
+}
+.callOuts{
+    font-weight: bold;
+}
+.techList{
+    line-height: 1.2;
+    margin-left:30px;
+}
+.fullViewOnly
+{
+    display: none;
+
+    @media (min-width:@minWidthForDesktop)
+    {
+        display: inline-flex;
+    }    
+} 
+.name{
+    font-size: xx-large;
+}
+.hideLinkButton{
+    display:none;
+}
+
+
+.pageContainer{
+    width:100%;
+    flex-direction: column;
+    margin:0 auto;
+    align-items: center;
+    justify-content: center;
+}

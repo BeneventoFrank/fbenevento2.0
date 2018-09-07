@@ -1,0 +1,138 @@
+.mainSectionContent{
+    
+    display: flex;
+    flex-direction: column;
+    max-width: 1020px;
+    margin:0 auto;
+
+    .aboutMe{
+        .backgroundImageAndBorder();
+        line-height:4rem;
+        font-size:1.8rem;
+        
+        p{
+            padding:15px;
+        }        
+        .indent{
+            margin-left:10px;
+        }
+        .helloWorld{
+            margin-bottom:0;
+        }
+
+    }
+    .resume{
+        .backgroundImageAndBorder();
+        line-height:4rem;
+        font-size:1.8rem;
+
+        .resumeContent{
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+
+            @media (min-width:@minWidthForDesktop){
+                display:flex;
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            
+            .resumeHeader{
+                margin-top:10px;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom:20px;
+                padding:10px;
+
+                @media (min-width:@minWidthForDesktop){
+                    width:50%;
+                    align-items: center;
+                }
+
+                .resumeImage{
+                    width:200px;
+                    height:200px;
+                    border-radius: 50%;
+                    border:5px solid @accentColor;
+                }
+                .resumeHeaderText{
+                    text-align:center;
+
+                    @media (min-width:@minWidthForDesktop){
+                        text-align:Left;                    
+                    }
+    
+                    
+                }            
+    
+            }
+            .resumeSummary{
+                width:100%;    
+
+                .summaryText{
+                    margin:10px;
+                }
+                .projects{
+                    margin:10px;
+
+                    .projectHeader
+                    {
+                        font-weight: bold;
+                    }                
+                }
+                .addJobExp{
+                    text-align: center;
+                    font-size: 3rem;
+                    padding:20px;
+                    color:@textColor;
+                }
+                .jobContainer{
+                    margin:10px;
+                    display:flex;
+                    flex-wrap: wrap;
+
+                    @media (min-width:1050px){
+                        justify-content: space-between;                        
+                    }
+                    @media (min-width:@minWidthForDesktop){
+                        .shrinkHeader{
+                            line-height: 2rem;
+                        }                    
+                    }
+
+
+                    .techStackSection{
+                        display:flex;
+                        flex-direction: column;
+                        width: 100%;
+                        
+                        .techStackList{
+                            display:flex;
+                            justify-content: space-around;
+                            width: 75%;
+                            justify-content: space-around;
+                            
+                        }                        
+                    }
+                    .jobResponsibilitiesList{
+                        list-style-type: square;
+                        margin-left:52px;
+                    }                     
+                    .jobHeader{
+                        font-weight: bold;
+                    }
+
+                }
+                .addInfoText{
+                    font-weight: bold;
+                    margin-top:20px;
+                    margin-left:10px;
+                    margin-right:10px;
+                    margin-bottom:40px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

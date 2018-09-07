@@ -1,0 +1,29 @@
+.mainImage{
+    background: url('../img/bgHeader-72k.jpg')no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+    display:flex;
+    justify-content: center;
+
+    .introLeadIn {
+        font-size: 4rem;
+        font-style: italic;
+        margin-bottom: 25px;
+        font-family: @introText;
+        color:white;
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+        display:flex;
+        margin-top:130px;
+    }
+    @media (min-width:@minWidthForDesktop){
+        .introLeadIn {
+            font-size:5rem;
+            margin-top:0px;
+        }
+    }
+}

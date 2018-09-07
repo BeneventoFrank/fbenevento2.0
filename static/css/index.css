@@ -174,7 +174,7 @@ body {
   width: 300px;
   text-align: center;
   background-color: #546A7B;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 .sectionTitle {
   font-size: 4.5rem;
@@ -186,7 +186,6 @@ body {
 }
 .resumeSubHeader {
   font-size: 3rem;
-  margin-left: 10px;
   margin-right: 10px;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -285,16 +284,22 @@ header nav a {
 }
 .mainSectionContent .aboutMe {
   background-image: url("../img/gl.jpg");
-  border-radius: 5px;
+  border-radius: 4px;
   line-height: 4rem;
   font-size: 1.8rem;
 }
 .mainSectionContent .aboutMe p {
   padding: 15px;
 }
+.mainSectionContent .aboutMe .indent {
+  margin-left: 10px;
+}
+.mainSectionContent .aboutMe .helloWorld {
+  margin-bottom: 0;
+}
 .mainSectionContent .resume {
   background-image: url("../img/gl.jpg");
-  border-radius: 5px;
+  border-radius: 4px;
   line-height: 4rem;
   font-size: 1.8rem;
 }
@@ -398,7 +403,7 @@ header nav a {
 }
 .contactInfo {
   background-image: url("../img/gl.jpg");
-  border-radius: 5px;
+  border-radius: 4px;
   font-size: 1.6rem;
 }
 .contactInfo p {

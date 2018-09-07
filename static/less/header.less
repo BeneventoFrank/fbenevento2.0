@@ -1,0 +1,23 @@
+header{
+    position:fixed;
+    width: 100%;
+    background-color: @headerColor;
+
+    nav{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width:100%;
+        font-size:1.5rem;
+        
+        @media (min-width:@minWidthForDesktop){
+            justify-content: flex-end;        
+        }
+
+        a{
+            text-decoration: none;
+            padding:20px;
+            color:white;
+        }
+    }
+}
