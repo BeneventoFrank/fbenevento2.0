@@ -398,9 +398,9 @@
     jQuery(document).ready(function($){
         var deviceAgent = navigator.userAgent.toLowerCase();
         var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
-        
+        console.log('deviceAgent')
         if (agentID) {
-
+            
             $('#mainHeader').addClass('showBackgroundColor');
     
         }
