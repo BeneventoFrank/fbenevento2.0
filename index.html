@@ -408,8 +408,8 @@
     });
 
     var navbarCollapse = function() {
-
-        let maxOffset = 870;
+        console.log($("#mainHeader").offset().top)
+        let maxOffset = 817;
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
             maxOffset= 500;
         }
@@ -426,13 +426,14 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);    
 
-    document.getElementById('showAddJobExp').addEventListener("click",function(){
-        let jobHistory2 = document.getElementById('jobHistory2');
-        let jobHistory3 = document.getElementById('jobHistory3');
-        jobHistory2.classList.remove("fullviewOnly");  
-        jobHistory3.classList.remove("fullviewOnly");
+    
+    $('#showAddJobExp').click(function(){
+        let jobHistory2 = $('#jobHistory2');
+        let jobHistory3 = $('#jobHistory3');
+        jobHistory2.removeClass('fullviewOnly');
+        jobHistory3.removeClass('fullviewOnly');
 
-        document.getElementById('showAddJobExp').classList.add('hideLinkButton');
+        $('#showAddJobExp').addClass('hideLinkButton');
     })
     
 </script>
