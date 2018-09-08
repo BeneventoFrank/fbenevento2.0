@@ -395,6 +395,18 @@
 <script>
 
 
+    jQuery(document).ready(function($){
+        var deviceAgent = navigator.userAgent.toLowerCase();
+        var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
+        
+        if (agentID) {
+
+            $('#mainHeader').addClass('showBackgroundColor');
+    
+        }
+    });
+
+
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
         var target = $(this.hash);
