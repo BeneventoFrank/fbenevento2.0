@@ -226,10 +226,12 @@ body {
   align-items: center;
   justify-content: center;
 }
+.showBackgroundColor {
+  background-color: #393D3F;
+}
 header {
   position: fixed;
   width: 100%;
-  background-color: #393D3F;
 }
 header nav {
   display: flex;

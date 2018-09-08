@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="pageContainer">
-        <header>
+        <header id='mainHeader'>
                 <nav id='navLinkMenu' class='navigation'>
                         <a class='js-scroll-trigger' href="#homeImage">Home</a>
                         <a class='js-scroll-trigger' href="#aboutMe">About</a>
@@ -407,6 +407,18 @@
         }
         }
     });
+
+    var navbarCollapse = function() {
+        if ($("#mainHeader").offset().top > 978) {
+            $('#mainHeader').addClass('showBackgroundColor');
+        } else {
+            $('#mainHeader').removeClass('showBackgroundColor');
+        }
+    };
+    // Collapse now if page is not at top
+    navbarCollapse();
+    // Collapse the navbar when page is scrolled
+    $(window).scroll(navbarCollapse);    
 
     document.getElementById('showAddJobExp').addEventListener("click",function(){
         let jobHistory2 = document.getElementById('jobHistory2');
