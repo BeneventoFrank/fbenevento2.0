@@ -254,6 +254,7 @@ header nav a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-attachment: scroll;
   min-height: 100%;
   display: flex;
   justify-content: center;
