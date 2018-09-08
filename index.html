@@ -409,7 +409,9 @@
 
     var navbarCollapse = function() {
 
-        if ($("#mainHeader").offset().top >= ($('#aboutMe').offset().top - 40)) {
+        console.log($("#mainHeader").offset().top)
+
+        if ($("#mainHeader").offset().top >= 979) {
             $('#mainHeader').addClass('showBackgroundColor');
         } else {
             $('#mainHeader').removeClass('showBackgroundColor');
