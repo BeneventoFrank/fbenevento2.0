@@ -409,7 +409,8 @@
     });
 
     var navbarCollapse = function() {
-        if ($("#mainHeader").offset().top > 978) {
+
+        if ($("#mainHeader").offset().top >= ($('#aboutMe').offset().top - 40)) {
             $('#mainHeader').addClass('showBackgroundColor');
         } else {
             $('#mainHeader').removeClass('showBackgroundColor');
