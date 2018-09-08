@@ -69,6 +69,12 @@
                     .name{
                         margin-top:80px;
                     }
+                    .skillNumberWithPadding{
+                        .skillNumber(30px)
+                    }
+                    .skillNumberNoPadding{
+                        .skillNumber(0)
+                    }                    
                     @media @desktop{
                         display:flex;
                         flex-direction: column;
@@ -82,14 +88,7 @@
                                 width:210px;
                                 display: flex;
                                 flex-direction: column;
-                                
-                                .skillNumber{
-                                    text-align: right;
-                                    font-size:1rem;
-                                    width:70%;
-                                    height:17px;
-                                    padding-left:30px;
-                                }
+
                                 .col-6{
                                     .skillsBox(60%);
                                 }
@@ -126,7 +125,10 @@
                                 font-size:2.3rem;
                             }
                         }
-                             
+                        .recoTitle{
+                            font-style: italic;
+                            text-align: center;
+                        } 
                     }
 
                 }              
