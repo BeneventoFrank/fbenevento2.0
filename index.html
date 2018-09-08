@@ -409,9 +409,13 @@
 
     var navbarCollapse = function() {
 
-        console.log($("#mainHeader").offset().top)
+        let maxOffset = 870;
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            maxOffset= 50;
+        }
 
-        if ($("#mainHeader").offset().top >= 979) {
+
+        if ($("#mainHeader").offset().top >= maxOffset) {
             $('#mainHeader').addClass('showBackgroundColor');
         } else {
             $('#mainHeader').removeClass('showBackgroundColor');
