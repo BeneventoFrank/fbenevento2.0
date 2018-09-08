@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="pageContainer">
-        <header id='mainHeader'>
+        <header id='mainHeader' class='showBackgroundColor'>
                 <nav id='navLinkMenu' class='navigation'>
                         <a class='js-scroll-trigger' href="#homeImage">Home</a>
                         <a class='js-scroll-trigger' href="#aboutMe">About</a>
@@ -393,19 +393,6 @@
 
 
 <script>
-
-
-    $(document).ready(function($){
-        var deviceAgent = navigator.userAgent.toLowerCase();
-        var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
-        alert(deviceAgent)
-        if (agentID) {
-            
-            $('#mainHeader').addClass('showBackgroundColor');
-    
-        }
-    });
-
 
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
