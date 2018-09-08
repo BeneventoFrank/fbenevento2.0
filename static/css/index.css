@@ -399,6 +399,26 @@ header nav a {
     border-radius: 15px 50px 50px 0px;
   }
 }
+.mainSectionContent .resume .resumeContent .resumeHeader .recommendations {
+  width: 98%;
+  display: none;
+}
+@media (min-width:1050px) {
+  .mainSectionContent .resume .resumeContent .resumeHeader .recommendations {
+    display: inline-block;
+  }
+  .mainSectionContent .resume .resumeContent .resumeHeader .recommendations .name {
+    margin-top: 80px;
+  }
+  .mainSectionContent .resume .resumeContent .resumeHeader .recommendations .recoText {
+    text-align: center;
+    font-style: italic;
+    margin-top: 300px;
+  }
+  .mainSectionContent .resume .resumeContent .resumeHeader .recommendations .recoText .fancyQuotes {
+    font-size: 2.3rem;
+  }
+}
 .mainSectionContent .resume .resumeContent .resumeSummary {
   width: 100%;
 }
