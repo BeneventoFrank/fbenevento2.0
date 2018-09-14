@@ -229,27 +229,6 @@ body {
 .showBackgroundColor {
   background-color: #393D3F;
 }
-header {
-  position: fixed;
-  width: 100%;
-}
-header nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-  font-size: 2rem;
-}
-@media (min-width:768px) {
-  header nav {
-    justify-content: flex-end;
-  }
-}
-header nav a {
-  text-decoration: none;
-  padding: 20px;
-  color: white;
-}
 .mainImage {
   background: url('../img/bgHeader-72k.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;

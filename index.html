@@ -7,22 +7,13 @@
     <link rel="icon" type="image/png" href="/static/img/bgHeader-72k.jpg">    
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>fbenevento.com</title>
 </head>
 <body>
-    <div class="pageContainer">
-        <header id='mainHeader' class='showBackgroundColor'>
-                 <!-- <nav id='navLinkMenu' class='navigation' data-aos="fade-left" data-aos-anchor="#mainHeader">
-                        <a class='js-scroll-trigger' href="#homeImage">Home</a>
-                        <a class='js-scroll-trigger' href="#aboutMe">About</a>
-                        <a class='js-scroll-trigger' href="#resume">Resume</a>
-                        <a class='js-scroll-trigger' href="#contactMe">Contact</a>
-                    </nav> -->
-        </header>
+    <div id="mainImage" class="pageContainer">
         <section data-aos="flip-left" id='homeImage' class='mainImage'>
-            <div class="introLeadIn" data-aos="fade-right" data-aos-duration="1900" data-aos-anchor="#mainHeader">
+            <div class="introLeadIn" data-aos="fade-right" data-aos-duration="1900" data-aos-anchor="#mainImage">
                 <p>Welcome To My Site!</p> 
             </div>                
         </section>
@@ -399,49 +390,13 @@
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({duration: 1500});
     </script>    
 </body>
 </html>
 
 
 <script>
-    AOS.init({
-    duration: 1500
-    });
-
-    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        if (target.length) {
-            $('html, body').animate({
-            scrollTop: (target.offset().top - 54)
-            }, 1000, "easeInOutExpo");
-            return false;
-        }
-        }
-    });
-
-    var navbarCollapse = function() {
-        let maxOffset = 817;
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            maxOffset= 500;
-        }
-
-
-        if ($("#mainHeader").offset().top >= maxOffset) {
-            $('#mainHeader').addClass('showBackgroundColor');
-        } else {
-            $('#mainHeader').removeClass('showBackgroundColor');
-        }
-    };
-    // Collapse now if page is not at top
-    navbarCollapse();
-    // Collapse the navbar when page is scrolled
-    $(window).scroll(navbarCollapse);    
-
-    
     $('#showAddJobExp').click(function(){
         let jobHistory2 = $('#jobHistory2');
         let jobHistory3 = $('#jobHistory3');
@@ -450,5 +405,4 @@
 
         $('#showAddJobExp').addClass('hideLinkButton');
     })
-    
 </script>
