@@ -14,15 +14,15 @@
 <body>
     <div class="pageContainer">
         <header id='mainHeader' class='showBackgroundColor'>
-                 <nav id='navLinkMenu' class='navigation' data-aos="fade-left" data-aos-anchor="#mainHeader">
+                 <!-- <nav id='navLinkMenu' class='navigation' data-aos="fade-left" data-aos-anchor="#mainHeader">
                         <a class='js-scroll-trigger' href="#homeImage">Home</a>
                         <a class='js-scroll-trigger' href="#aboutMe">About</a>
                         <a class='js-scroll-trigger' href="#resume">Resume</a>
                         <a class='js-scroll-trigger' href="#contactMe">Contact</a>
-                    </nav>
+                    </nav> -->
         </header>
-        <section id='homeImage' class='mainImage'>
-            <div class="introLeadIn" data-aos="fade-right" data-aos-anchor="#mainHeader">
+        <section data-aos="flip-down" data-aos-duration="4000" id='homeImage' class='mainImage'>
+            <div class="introLeadIn" data-aos="fade-right" data-aos-duration="1000" data-aos-anchor="#mainHeader">
                 <p>Welcome To My Site!</p> 
             </div>                
         </section>
@@ -407,7 +407,7 @@
 
 <script>
     AOS.init({
-    duration: 1200
+    duration: 1500
     });
 
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
