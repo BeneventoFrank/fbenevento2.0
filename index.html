@@ -29,14 +29,17 @@
         <section class="mainSectionContent">
 
             <div id='aboutMe' class='vertLine'>&nbsp;</div>                
-            <div class='sectionHeading'>
+            <div id='trigger-AboutMe' class='sectionHeading'>
                 <p class='sectionTitle'>About Me</p>
             </div>
             <div class='vertLine'>&nbsp;</div>
             <div class='horizontalRight'>&nbsp;</div>
             <section class='lineRight'>
                 <section class='reduceForLines'>
-                    <section class='aboutMe'>
+                    <section class='aboutMe'
+                    data-aos="fade-right"
+                    data-aos-anchor="#trigger-AboutMe">
+
                         <p class='resumeSubHeader helloWorld'>Hello World!</p>
                         <p class='indent'>My name is <span class='callOuts'>Frank Benevento</span>, welcome to my small slice of the internet. I am a full-stack developer new to the San Francisco Bay area. I've been in this industry for over 17 years because I enjoy leveraging technology to solve problems.  </p>
                         <p class='indent'>I enjoy working with various technologies such as <span class='callOuts'>Javascript</span>, <span class='callOuts'>node.js</span>, <span class='callOuts'>web api</span>, <span class='callOuts'>HTML</span> and I can NOT get enough <span class='callOuts'>flexbox</span>. I have recently decided to refresh my skillsets and so I have enrolled at <a class='link' href="https://lambdaschool.com/" target="_blank">Lambda School</a>. Read about my experience <router-link to='lambdaBlog'>here</router-link> </p>
@@ -47,14 +50,17 @@
             </section>
             <div class='horizontalRight'>&nbsp;</div>            
             <div id='resume' class='vertLine'>&nbsp;</div>            
-            <div class='sectionHeading' >
+            <div id='trigger-Resume' class='sectionHeading' >
                     <p class='sectionTitle'>Resume</p>
             </div>            
             <div id='resume' class='vertLine'>&nbsp;</div>            
             <div class='horizontalLeft'>&nbsp;</div>
             <section class='lineLeft'>
                 <section class='reduceForLines'>
-                    <section class='resume'>
+                    <section class='resume'
+                    data-aos="fade-left"
+                    data-aos-anchor="#trigger-Resume">
+
 
                         <div class='resumeContent'>
 
@@ -365,14 +371,16 @@
             </section>
             <div class='horizontalLeft'>&nbsp;</div>    
             <div class='vertLine'>&nbsp;</div>            
-            <div class='sectionHeading'>
+            <div id='trigger-Contact' class='sectionHeading'>
                     <p class='sectionTitle'>Contact</p>
             </div>            
             <div id='contactMe' class='vertLine'>&nbsp;</div> 
             <div class='horizontalRight'>&nbsp;</div>
             <section class='lineRight'>
                 <section class='reduceForLines'>
-                    <section class='contactInfo'>
+                    <section class='contactInfo'
+                        data-aos="fade-right"
+                        data-aos-anchor="#trigger-Contact">
                         <p class='name'>Frank Benevento</p>
                         <p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;Fairfax CA 94930</p>
                         <p><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;817-805-5994</p>
