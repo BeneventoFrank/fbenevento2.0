@@ -126,6 +126,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@keyframes example {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 500px;
+  }
+}
 html {
   height: 100%;
   font-size: 62.5%;
@@ -386,28 +394,52 @@ header nav a {
     flex-direction: column;
   }
   .mainSectionContent .resume .resumeContent .resumeHeader .skillSection .skillsGrid .skillLevel .col-6 {
-    width: 60%;
+    max-width: 60%;
     height: 10px;
     background-color: #546A7B;
     border-radius: 15px 50px 50px 0px;
+    -webkit-animation-name: example;
+    /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    -webkit-animation-duration: 4s;
+    /* Safari 4.0 - 8.0 */
+    animation-duration: 4s;
   }
   .mainSectionContent .resume .resumeContent .resumeHeader .skillSection .skillsGrid .skillLevel .col-7 {
-    width: 70%;
+    max-width: 70%;
     height: 10px;
     background-color: #546A7B;
     border-radius: 15px 50px 50px 0px;
+    -webkit-animation-name: example;
+    /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    -webkit-animation-duration: 5s;
+    /* Safari 4.0 - 8.0 */
+    animation-duration: 5s;
   }
   .mainSectionContent .resume .resumeContent .resumeHeader .skillSection .skillsGrid .skillLevel .col-8 {
-    width: 80%;
+    max-width: 80%;
     height: 10px;
     background-color: #546A7B;
     border-radius: 15px 50px 50px 0px;
+    -webkit-animation-name: example;
+    /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    -webkit-animation-duration: 6s;
+    /* Safari 4.0 - 8.0 */
+    animation-duration: 6s;
   }
   .mainSectionContent .resume .resumeContent .resumeHeader .skillSection .skillsGrid .skillLevel .col-9 {
-    width: 90%;
+    max-width: 90%;
     height: 10px;
     background-color: #546A7B;
     border-radius: 15px 50px 50px 0px;
+    -webkit-animation-name: example;
+    /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    -webkit-animation-duration: 7s;
+    /* Safari 4.0 - 8.0 */
+    animation-duration: 7s;
   }
 }
 @media (min-width:768px) and (min-width:768px) {

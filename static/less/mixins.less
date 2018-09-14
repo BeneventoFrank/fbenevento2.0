@@ -5,11 +5,23 @@
 }
 
 .skillsBox(@width){
-    width:@width;
+    max-width:@width;
     height:10px;
     background-color:@accentColor;
-    border-radius: 15px 50px 50px 0px
+    border-radius: 15px 50px 50px 0px;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    animation-name: example;
 }
+.skillsAnimate(@duration)
+{
+   -webkit-animation-duration:@duration ; /* Safari 4.0 - 8.0 */
+   animation-duration: @duration;
+}
+@keyframes example {
+    from {width: 5px;}
+    to {width:500px;}
+}
+
 .skillNumber(@padding){
     text-align: right;
     font-size:1rem;
