@@ -1,0 +1,122 @@
+
+.resumeContainer{
+    padding-left:15px;
+    padding-right:15px;
+    
+    .overview{
+        .resumeMarginTopAndBottom();
+    }
+    .jobDivider{
+        display: flex;
+        width: 100%;
+
+        .jobDividerBlock{
+            width: 10%;
+            border-top:1px solid @accentColor; //trick to generate a fullwidth border at mobile.
+
+            @media @desktop {
+                border-top:none;
+            }
+        }
+        .jobDividerBlockLiner{
+            width: 40%;
+            border-top:1px solid @accentColor;
+        }
+    }
+    .resumeBlock{
+        .resumeMarginTopAndBottom();
+        padding-left:30px;
+        padding-right:30px;
+    }
+    .jobContainer{
+        display:flex;
+        flex-wrap: wrap;
+        margin-left:30px;
+        margin-right:30px;
+        line-height: 3rem;
+
+        .jobBlock{
+            display:flex;
+            flex-direction: column;
+            margin-bottom:45px;
+            
+            .jobBlockHeader{
+                display:flex;
+                flex-direction: column;
+        
+                @media @desktop{
+                    flex-direction: row;
+                    justify-content: space-between
+                } 
+            
+            }       
+        }
+        .mobileViewOnly{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        
+            @media @desktop{
+                display: none;
+            }    
+        }
+        .fullViewOnly
+        {
+            display: none;
+        
+            @media @desktop{
+                display: inline-flex;
+            }    
+        }         
+
+
+        .techStackSection{
+            .resumeMarginTopAndBottom();
+            display:flex;
+            flex-direction: column;
+            width: 100%;
+            
+            .techStackList{
+                display:flex;
+                justify-content: space-around;
+                width: 100%;
+                justify-content: space-around;
+                @media @desktop{
+                    display:none;
+                }
+            }
+            .techStackPretty{
+                display:none;
+
+                @media @desktop{
+                    display:inline-flex;
+                }
+
+            }                        
+        }        
+    }
+}
+
+//global to the resume section.
+.resumeSubHeader{
+    font-size:3rem;
+    font-weight: bold;
+    margin-bottom:25px;
+}    
+.jobResponsibilitiesList{
+    list-style-type: square;
+    margin-left:52px;
+}                     
+.jobHeader{
+    font-weight: bold;
+}
+.jobSubHeader{
+    font-size:1.4rem;
+}
+.callOuts{
+    font-weight: bold;
+}
+.techList{
+    line-height: 1.2;
+    margin-left:30px;
+}
