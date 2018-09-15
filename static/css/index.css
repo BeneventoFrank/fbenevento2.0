@@ -149,7 +149,7 @@ body {
 }
 .vertLine {
   border-right: 1px solid #546A7B;
-  min-height: 60px;
+  min-height: 120px;
   width: 1px;
   align-self: center;
 }
@@ -235,7 +235,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   min-height: 100%;
   display: flex;
   justify-content: center;

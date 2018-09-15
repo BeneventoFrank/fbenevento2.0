@@ -11,23 +11,29 @@
     <title>fbenevento.com</title>
 </head>
 <body>
-    <div id="mainImage" class="pageContainer">
-        <section data-aos="flip-left" id='homeImage' class='mainImage'>
+    <div id="mainImage" class="pageContainer mainImage">
+        <!-- <section data-aos-duration="1700" data-aos="flip-left" id='homeImage' class='mainImage'>
             <div class="introLeadIn" data-aos="fade-right" data-aos-duration="1900" data-aos-anchor="#mainImage">
                 <p>Welcome To My Site!</p> 
             </div>                
-        </section>
+        </section> -->
         <section class="mainSectionContent">
 
-            <div id='aboutMe' class='vertLine'>&nbsp;</div>                
-            <div id='trigger-AboutMe' class='sectionHeading'>
+            <div id='aboutMe'>&nbsp;</div>                
+            <div id='trigger-AboutMe' class='sectionHeading'
+                    data-aos-duration="1000"
+                    data-aos="flip-left"
+                    data-aos-anchor="#trigger-AboutMe">
                 <p class='sectionTitle'>About Me</p>
             </div>
             <div class='vertLine'>&nbsp;</div>
-            <div class='horizontalRight'>&nbsp;</div>
+            <div class='horizontalRight'
+                data-aos-duration="1500"
+                data-aos="fade-left">&nbsp;</div>
             <section class='lineRight'>
                 <section class='reduceForLines'>
                     <section class='aboutMe'
+                    data-aos-duration="1000"
                     data-aos="fade-right"
                     data-aos-anchor="#trigger-AboutMe">
 
@@ -39,16 +45,24 @@
                     </section>                                        
                 </section>
             </section>
-            <div class='horizontalRight'>&nbsp;</div>            
+            <div class='horizontalRight'
+                data-aos-duration="1500"
+                data-aos="fade-left"
+                data-aos-anchor="#trigger-AboutMe">&nbsp;</div>            
             <div id='resume' class='vertLine'>&nbsp;</div>            
-            <div id='trigger-Resume' class='sectionHeading' >
+            <div id='trigger-Resume' class='sectionHeading' 
+                    data-aos-duration="1000"
+                    data-aos="flip-right"
+                    data-aos-anchor="#trigger-Resume"
+            >
                     <p class='sectionTitle'>Resume</p>
             </div>            
             <div id='resume' class='vertLine'>&nbsp;</div>            
-            <div class='horizontalLeft'>&nbsp;</div>
+            <div class='horizontalLeft' data-aos-duration="1000" data-aos="fade-right" data-aos-anchor="#trigger-Resume">&nbsp;</div>
             <section class='lineLeft'>
                 <section class='reduceForLines'>
                     <section class='resume'
+                    data-aos-duration="1000"
                     data-aos="fade-left"
                     data-aos-anchor="#trigger-Resume">
 
@@ -358,16 +372,17 @@
                     </section>                                        
                 </section>
             </section>
-            <div id='trigger-Contact' class='horizontalLeft'>&nbsp;</div>    
+            <div id='trigger-Contact' class='horizontalLeft' data-aos-duration="1000" data-aos="fade-right" data-aos-anchor="#trigger-Contact">&nbsp;</div>
             <div class='vertLine'>&nbsp;</div>            
-            <div class='sectionHeading'>
+            <div class='sectionHeading' data-aos-duration="1000" data-aos="flip-left" data-aos-anchor="#trigger-Contact">
                     <p class='sectionTitle'>Contact</p>
             </div>            
             <div id='contactMe' class='vertLine'>&nbsp;</div> 
-            <div class='horizontalRight'>&nbsp;</div>
+            <div class='horizontalRight' data-aos-duration="1000" data-aos="fade-left" data-aos-anchor="#trigger-Contact">&nbsp;</div>
             <section class='lineRight'>
                 <section class='reduceForLines'>
                     <section class='contactInfo'
+                        data-aos-duration="1000"
                         data-aos="fade-right"
                         data-aos-anchor="#trigger-Contact">
                         <p class='name'>Frank Benevento</p>
@@ -381,7 +396,7 @@
                     </section>                                        
                 </section>
             </section>
-            <div class='horizontalRight'>&nbsp;</div>
+            <div class='horizontalRight' data-aos-duration="1000" data-aos="fade-left" data-aos-anchor="#trigger-Contact">&nbsp;</div>
             <div id='resume' class='vertLine'>&nbsp;</div>            
         </section>
         <footer class="footer">
@@ -390,7 +405,7 @@
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({duration: 1500});
+      AOS.init({});
     </script>    
 </body>
 </html>
