@@ -4,13 +4,15 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    //background-attachment:scroll;
+    background-attachment:scroll;   
     width: 100%;
     height:auto;
     display:flex;
     justify-content: center;
     margin:0 auto;
-
+    @media @desktop{
+        background-attachment:fixed;    
+    }
     .introLeadIn {
         font-size: 4rem;
         font-style: italic;

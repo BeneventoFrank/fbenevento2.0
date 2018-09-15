@@ -235,11 +235,17 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-attachment: scroll;
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   margin: 0 auto;
+}
+@media (min-width:768px) {
+  .mainImage {
+    background-attachment: fixed;
+  }
 }
 .mainImage .introLeadIn {
   font-size: 4rem;
