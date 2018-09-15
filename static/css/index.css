@@ -131,7 +131,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: 'Julius Sans One';
+  font-family: 'Lato';
   background-color: #C6C5B9;
   height: 100%;
   box-sizing: border-box;
@@ -237,6 +237,7 @@ body {
 }
 @media (min-width:1025px) {
   body {
+    background-color: #393D3F;
     background: url('../img/bgHeader-72k.jpg') no-repeat center center fixed;
     background-attachment: fixed;
     -webkit-background-size: cover;
@@ -271,10 +272,18 @@ body .introLeadIn {
   margin: 0 auto;
 }
 .mainSectionContent .aboutMe {
+  display: flex;
   background-image: url("../img/gl.jpg");
   border-radius: 4px;
   line-height: 4rem;
   font-size: 1.8rem;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width:1025px) {
+  .mainSectionContent .aboutMe {
+    flex-direction: row;
+  }
 }
 .mainSectionContent .aboutMe p {
   padding: 15px;
@@ -284,6 +293,64 @@ body .introLeadIn {
 }
 .mainSectionContent .aboutMe .helloWorld {
   margin-bottom: 0;
+}
+.mainSectionContent .aboutMe .resumeHeaderText {
+  text-align: center;
+}
+@media (min-width:1025px) {
+  .mainSectionContent .aboutMe .resumeHeaderText {
+    text-align: Left;
+  }
+}
+.mainSectionContent .aboutMe .resumeImage {
+  border-radius: 50%;
+  border: 5px solid #546A7B;
+}
+@media (min-width:1025px) {
+  .mainSectionContent .aboutMe .resumeImage {
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+}
+.mainSectionContent .aboutMe .smallerText {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+@media (min-width:1025px) {
+  .mainSectionContent .aboutMe .smallerText {
+    text-align: left;
+  }
+}
+.mainSectionContent .aboutMe .imageAndContact {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width:1025px) {
+  .mainSectionContent .aboutMe .imageAndContact {
+    margin-top: 0px;
+    width: 50%;
+  }
+}
+.mainSectionContent .aboutMe .helloWorld {
+  font-size: xx-large;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+@media (min-width:1025px) {
+  .mainSectionContent .aboutMe .helloWorld {
+    margin-top: 15px;
+  }
+}
+.mainSectionContent .aboutMe .aboutMeText {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 50px;
 }
 .mainSectionContent .resume {
   background-image: url("../img/gl.jpg");
@@ -315,20 +382,6 @@ body .introLeadIn {
   .mainSectionContent .resume .resumeContent .resumeHeader {
     width: 50%;
     align-items: flex-start;
-  }
-}
-.mainSectionContent .resume .resumeContent .resumeHeader .resumeImage {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 5px solid #546A7B;
-}
-.mainSectionContent .resume .resumeContent .resumeHeader .resumeHeaderText {
-  text-align: center;
-}
-@media (min-width:1025px) {
-  .mainSectionContent .resume .resumeContent .resumeHeader .resumeHeaderText {
-    text-align: Left;
   }
 }
 .mainSectionContent .resume .resumeContent .resumeHeader .skillSection {

@@ -6,10 +6,17 @@
     margin:0 auto;
 
     .aboutMe{
+        display:flex;
         .backgroundImageAndBorder();
         line-height:4rem;
         font-size:1.8rem;
+        flex-direction: column;
+        align-items: center;
         
+        @media @desktop {
+            flex-direction: row;
+        }
+
         p{
             padding:15px;
         }        
@@ -19,7 +26,64 @@
         .helloWorld{
             margin-bottom:0;
         }
+        .resumeHeaderText{
+            text-align:center;
+            @media @desktop{
+                text-align:Left;                    
+            }
+        }
+        .resumeImage{
+            border-radius: 50%;
+            border:5px solid @accentColor;
 
+            @media @desktop{
+                margin-left:15px;
+                margin-top:15px;
+            }
+        }
+
+        .smallerText{
+            font-size:1.5rem;
+            border-bottom:1px solid #ccc;
+            text-align:center;
+
+            @media @desktop{
+                text-align:left;
+            }
+        }
+        .imageAndContact{
+            margin-top:15px;
+            width: 100%;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            @media @desktop{
+                margin-top:0px;
+                width: 50%;
+            }
+        }
+        .helloWorld{
+            font-size:xx-large;
+            text-align: center;
+            margin-top:50px;
+            margin-bottom:20px;
+
+            @media @desktop{
+                margin-top:15px;
+            }
+
+        }
+        .aboutMeText{
+            padding-left: 15px;
+            padding-right:15px;
+            margin-bottom:50px;
+
+        }
+
+        
+        
     }
     .resume{
         .backgroundImageAndBorder();
@@ -50,19 +114,7 @@
                     align-items: flex-start;
                 }
 
-                .resumeImage{
-                    width:200px;
-                    height:200px;
-                    border-radius: 50%;
-                    border:5px solid @accentColor;
-                }
-                .resumeHeaderText{
-                    text-align:center;
 
-                    @media @desktop{
-                        text-align:Left;                    
-                    }
-                }            
                 .skillSection{
                     width:100%;
                     display:none;
