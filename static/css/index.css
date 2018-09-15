@@ -230,7 +230,6 @@ body {
   background-color: #393D3F;
 }
 body {
-  background: url('../img/bgHeader-72k.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -242,6 +241,7 @@ body {
 }
 @media (min-width:768px) {
   body {
+    background: url('../img/bgHeader-72k.jpg') no-repeat center center fixed;
     background-attachment: fixed;
   }
 }
