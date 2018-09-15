@@ -132,10 +132,13 @@ html {
 }
 body {
   font-family: 'Lato';
-  background-color: #C6C5B9;
+  background-color: #393D3F;
+  background-image: url('/static/img/bg.jpg');
+  background-attachment: fixed;
   height: 100%;
   box-sizing: border-box;
   color: #325050;
+  overflow-x: hidden;
 }
 .lineRight {
   border-right: 1px solid #546A7B;
@@ -198,14 +201,6 @@ body {
 }
 .showBackgroundColor {
   background-color: #393D3F;
-}
-body {
-  background-color: #393D3F;
-  background-image: url('/static/img/bg.jpg');
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
 }
 .mainSectionContent {
   display: flex;
