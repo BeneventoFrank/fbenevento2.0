@@ -193,7 +193,7 @@ body {
 .mobileViewOnly {
   display: inline-flex;
 }
-@media (min-width:1024px) {
+@media (min-width:1025px) {
   .mobileViewOnly .mobileViewOnly {
     display: none;
   }
@@ -208,7 +208,7 @@ body {
 .fullViewOnly {
   display: none;
 }
-@media (min-width:1024px) {
+@media (min-width:1025px) {
   .fullViewOnly {
     display: inline-flex;
   }
@@ -239,7 +239,7 @@ body {
   justify-content: center;
   margin: 0 auto;
 }
-@media (min-width:1024px) {
+@media (min-width:1025px) {
   body {
     background: url('../img/bgHeader-72k.jpg') no-repeat center center fixed;
     background-attachment: fixed;
@@ -258,7 +258,7 @@ body .introLeadIn {
   padding-left: 20px;
   padding-right: 20px;
 }
-@media (min-width:1024px) {
+@media (min-width:1025px) {
   body .introLeadIn {
     font-size: 5rem;
     margin-top: 0px;
@@ -296,7 +296,7 @@ body .introLeadIn {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width:1024px) {
+@media (min-width:1025px) {
   .mainSectionContent .resume .resumeContent {
     display: flex;
     flex-direction: row;
@@ -311,7 +311,7 @@ body .introLeadIn {
   margin-bottom: 20px;
   padding: 10px;
 }
-@media (min-width:1024px) {
+@media (min-width:1025px) {
   .mainSectionContent .resume .resumeContent .resumeHeader {
     width: 50%;
     align-items: flex-start;
@@ -326,7 +326,7 @@ body .introLeadIn {
 .mainSectionContent .resume .resumeContent .resumeHeader .resumeHeaderText {
   text-align: center;
 }
-@media (min-width:1024px) {
+@media (min-width:1025px) {
   .mainSectionContent .resume .resumeContent .resumeHeader .resumeHeaderText {
     text-align: Left;
   }
@@ -352,7 +352,7 @@ body .introLeadIn {
   height: 17px;
   padding-left: 0;
 }
-@media (min-width:1024px) {
+@media (min-width:1025px) {
   .mainSectionContent .resume .resumeContent .resumeHeader .skillSection {
     display: flex;
     flex-direction: column;
@@ -394,7 +394,7 @@ body .introLeadIn {
     border-radius: 15px 50px 50px 0px;
   }
 }
-@media (min-width:1024px) and (min-width:1024px) {
+@media (min-width:1025px) and (min-width:1025px) {
   .mainSectionContent .resume .resumeContent .resumeHeader .skillSection .skillsGrid .language {
     height: 17px;
   }
@@ -403,7 +403,7 @@ body .introLeadIn {
   width: 98%;
   display: none;
 }
-@media (min-width:1024px) {
+@media (min-width:1025px) {
   .mainSectionContent .resume .resumeContent .resumeHeader .recommendations {
     display: inline-block;
   }
@@ -441,7 +441,7 @@ body .introLeadIn {
   padding: 20px;
   color: #325050;
 }
-@media (min-width:1024px) {
+@media (min-width:1025px) {
   .mainSectionContent .resume .resumeContent .resumeSummary .addJobExp {
     display: none;
   }
@@ -456,7 +456,7 @@ body .introLeadIn {
     justify-content: space-between;
   }
 }
-@media (min-width:1024px) {
+@media (min-width:1025px) {
   .mainSectionContent .resume .resumeContent .resumeSummary .jobContainer .shrinkHeader {
     line-height: 2rem;
   }
