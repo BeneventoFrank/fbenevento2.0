@@ -201,16 +201,11 @@ body {
 }
 body {
   background-color: #393D3F;
+  background-image: url('/static/img/bg.jpg');
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   margin: 0 auto;
-}
-@media (min-width:1025px) {
-  body {
-    background-color: #393D3F;
-    background-image: url('/static/img/test1.jpg');
-    background-attachment: fixed;
-  }
 }
 .mainSectionContent {
   display: flex;
