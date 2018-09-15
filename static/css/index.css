@@ -370,6 +370,17 @@ body {
     display: none;
   }
 }
+.resumeContainer .jobContainer .mobileViewOnly .addJobExp {
+  text-align: center;
+  font-size: 3rem;
+  padding: 20px;
+  color: #325050;
+}
+@media (min-width:1025px) {
+  .resumeContainer .jobContainer .mobileViewOnly .addJobExp {
+    display: none;
+  }
+}
 .resumeContainer .jobContainer .fullViewOnly {
   display: none;
 }
