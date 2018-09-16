@@ -493,10 +493,16 @@ body {
   padding-bottom: 15px;
   margin-bottom: 60px;
 }
+@media (min-width:1025px) {
+  .recommendations-mobile .reco-columns-mobile .reco-columns-mobile-quote {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
 .recommendations-mobile .reco-columns-mobile .reco-columns-mobile-quote .recoText {
   text-align: center;
   font-style: italic;
-  line-height: 2rem;
+  line-height: 2.5rem;
 }
 @media (min-width:1025px) {
   .recommendations-mobile .reco-columns-mobile .reco-columns-mobile-quote .recoText {
