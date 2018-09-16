@@ -183,6 +183,14 @@ body {
   color: white;
   padding: 10px;
 }
+.lg {
+  width: 380px;
+}
+@media (min-width:1025px) {
+  .lg {
+    width: 390px;
+  }
+}
 .reduceForLines {
   padding: 20px;
 }
@@ -435,6 +443,67 @@ body {
 .techList {
   line-height: 1.2;
   margin-left: 30px;
+}
+.recommendations-desktop {
+  background-image: url("../img/gl.jpg");
+  border-radius: 4px;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 80px;
+  line-height: 2rem;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.recommendations-desktop .reco-column-wide {
+  max-width: 30%;
+}
+.recommendations-desktop .reco-column-narrow {
+  max-width: 5%;
+}
+.recommendations-mobile {
+  background-image: url("../img/gl.jpg");
+  border-radius: 4px;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.recommendations-mobile .reco-columns-mobile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 80px;
+  line-height: 2rem;
+}
+@media (min-width:1025px) {
+  .recommendations-mobile .reco-columns-mobile {
+    margin-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: left;
+  }
+}
+.recommendations-mobile .reco-columns-mobile .reco-columns-mobile-quote {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 60px;
+}
+.recommendations-mobile .reco-columns-mobile .reco-columns-mobile-quote .recoText {
+  text-align: center;
+  font-style: italic;
+  line-height: 2rem;
+}
+@media (min-width:1025px) {
+  .recommendations-mobile .reco-columns-mobile .reco-columns-mobile-quote .recoText {
+    margin-top: 25px;
+    text-align: left;
+  }
+}
+.recommendations-mobile .reco-columns-mobile .reco-columns-mobile-quote .recoText .fancyQuotes {
+  font-size: 2.5rem;
 }
 .contactInfo {
   background-image: url("../img/gl.jpg");
