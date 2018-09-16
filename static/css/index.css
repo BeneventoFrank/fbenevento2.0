@@ -150,6 +150,9 @@ body {
   color: #325050;
   text-decoration: underline solid #325050;
 }
+.linkpad {
+  padding-right: 10px;
+}
 .vertLine {
   border-right: 1px solid #546A7B;
   min-height: 120px;
