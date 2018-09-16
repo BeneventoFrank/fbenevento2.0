@@ -277,7 +277,9 @@ body {
 @media (min-width:800px) {
   .mainSectionContent .aboutMe .imageAndContact {
     margin-top: 0px;
-    width: 50%;
+    width: 30%;
+    justify-content: left;
+    align-items: flex-start;
   }
 }
 .mainSectionContent .aboutMe .helloWorld {
@@ -299,7 +301,7 @@ body {
 @media (min-width:800px) {
   .mainSectionContent .aboutMe .aboutMeText {
     margin-top: 0px;
-    width: 50%;
+    width: 70%;
   }
 }
 .mainSectionContent .resume {
