@@ -409,7 +409,7 @@ body {
   width: 100%;
   justify-content: space-around;
 }
-@media (min-width:1025px) {
+@media (min-width:800px) {
   .resumeContainer .jobContainer .techStackSection .techStackList {
     display: none;
   }
@@ -417,7 +417,7 @@ body {
 .resumeContainer .jobContainer .techStackSection .techStackPretty {
   display: none;
 }
-@media (min-width:1025px) {
+@media (min-width:800px) {
   .resumeContainer .jobContainer .techStackSection .techStackPretty {
     display: inline-flex;
   }
