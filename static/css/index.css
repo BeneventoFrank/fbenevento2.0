@@ -296,6 +296,12 @@ body {
   padding-right: 15px;
   margin-bottom: 50px;
 }
+@media (min-width:800px) {
+  .mainSectionContent .aboutMe .aboutMeText {
+    margin-top: 0px;
+    width: 50%;
+  }
+}
 .mainSectionContent .resume {
   background-image: url("../img/gl.jpg");
   border-radius: 4px;
