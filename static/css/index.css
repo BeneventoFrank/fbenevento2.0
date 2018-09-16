@@ -507,6 +507,12 @@ body {
 .recommendations-mobile .reco-columns-mobile .reco-columns-mobile-quote .recoText .fancyQuotes {
   font-size: 2.5rem;
 }
+.recommendations-mobile .reco-columns-mobile .reco-columns-mobile-quote .fullQuote {
+  font-size: small;
+  text-align: center;
+  margin-top: 15px;
+  width: 100%;
+}
 .contactInfo {
   background-image: url("../img/gl.jpg");
   border-radius: 4px;
