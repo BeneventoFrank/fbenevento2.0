@@ -411,24 +411,6 @@ body {
   flex-direction: column;
   width: 100%;
 }
-.resumeContainer .jobContainer .techStackSection .techStackList {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-}
-@media (min-width:800px) {
-  .resumeContainer .jobContainer .techStackSection .techStackList {
-    display: none;
-  }
-}
-.resumeContainer .jobContainer .techStackSection .techStackPretty {
-  display: none;
-}
-@media (min-width:800px) {
-  .resumeContainer .jobContainer .techStackSection .techStackPretty {
-    display: inline-flex;
-  }
-}
 .resumeSubHeader {
   font-size: 3rem;
   font-weight: bold;
