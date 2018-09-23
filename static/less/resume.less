@@ -6,23 +6,6 @@
     .overview{
         .resumeMarginTopAndBottom();
     }
-    .jobDivider{
-        display: flex;
-        width: 100%;
-
-        .jobDividerBlock{
-            width: 10%;
-            border-top:1px solid @accentColor; //trick to generate a fullwidth border at mobile.
-
-            @media @desktop {
-                border-top:none;
-            }
-        }
-        .jobDividerBlockLiner{
-            width: 40%;
-            border-top:1px solid @accentColor;
-        }
-    }
     .resumeBlock{
         .resumeMarginTopAndBottom();
         padding-left:30px;
@@ -70,14 +53,6 @@
                 }
             }    
         }
-        .fullViewOnly
-        {
-            display: none;
-        
-            @media @desktop{
-                display: inline-flex;
-            }    
-        }         
 
 
         .techStackSection{
@@ -111,4 +86,21 @@
 .techList{
     line-height: 1.2;
     margin-left:30px;
+}
+.jobDivider{
+    display: flex;
+    width: 100%;
+
+    .jobDividerBlock{
+        width: 10%;
+        border-top:1px solid @accentColor; //trick to generate a fullwidth border at mobile.
+
+        @media @desktop {
+            border-top:none;
+        }
+    }
+    .jobDividerBlockLiner{
+        width: 40%;
+        border-top:1px solid @accentColor;
+    }
 }

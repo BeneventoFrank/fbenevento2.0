@@ -210,6 +210,14 @@ body {
   align-items: center;
   justify-content: center;
 }
+.fullViewOnly {
+  display: none;
+}
+@media (min-width:800px) {
+  .fullViewOnly {
+    display: inline-flex;
+  }
+}
 .mainSectionContent {
   display: flex;
   flex-direction: column;
@@ -330,23 +338,6 @@ body {
   margin-top: 20px;
   margin-bottom: 40px;
 }
-.resumeContainer .jobDivider {
-  display: flex;
-  width: 100%;
-}
-.resumeContainer .jobDivider .jobDividerBlock {
-  width: 10%;
-  border-top: 1px solid #546A7B;
-}
-@media (min-width:800px) {
-  .resumeContainer .jobDivider .jobDividerBlock {
-    border-top: none;
-  }
-}
-.resumeContainer .jobDivider .jobDividerBlockLiner {
-  width: 40%;
-  border-top: 1px solid #546A7B;
-}
 .resumeContainer .resumeBlock {
   margin-top: 20px;
   margin-bottom: 40px;
@@ -396,14 +387,6 @@ body {
     display: none;
   }
 }
-.resumeContainer .jobContainer .fullViewOnly {
-  display: none;
-}
-@media (min-width:800px) {
-  .resumeContainer .jobContainer .fullViewOnly {
-    display: inline-flex;
-  }
-}
 .resumeContainer .jobContainer .techStackSection {
   margin-top: 20px;
   margin-bottom: 40px;
@@ -432,6 +415,23 @@ body {
 .techList {
   line-height: 1.2;
   margin-left: 30px;
+}
+.jobDivider {
+  display: flex;
+  width: 100%;
+}
+.jobDivider .jobDividerBlock {
+  width: 10%;
+  border-top: 1px solid #546A7B;
+}
+@media (min-width:800px) {
+  .jobDivider .jobDividerBlock {
+    border-top: none;
+  }
+}
+.jobDivider .jobDividerBlockLiner {
+  width: 40%;
+  border-top: 1px solid #546A7B;
 }
 .recommendations-desktop {
   background-image: url("../img/gl.jpg");
@@ -507,6 +507,78 @@ body {
   text-align: center;
   margin-top: 15px;
   width: 100%;
+}
+.portfolio {
+  display: flex;
+  background-image: url("../img/gl.jpg");
+  border-radius: 4px;
+  padding: 15px;
+  flex-direction: column;
+}
+.portfolio .port-divider {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+@media (min-width:800px) {
+  .portfolio .port-image-and-text {
+    display: flex;
+  }
+}
+.portfolio .port-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+@media (min-width:800px) {
+  .portfolio .port-image-section {
+    justify-content: flex-start;
+    width: auto;
+  }
+}
+.portfolio .port-image-section .port-proj-image {
+  width: 150px;
+  height: auto;
+  padding: 5px;
+  border: 2px solid #546A7B;
+  border-radius: 3px;
+}
+.portfolio .port-project-description {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width:800px) {
+  .portfolio .port-project-description {
+    margin-left: 50px;
+  }
+}
+.portfolio .port-project-description .port-project-desc-header {
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+  align-items: baseline;
+}
+.portfolio .port-project-description .port-project-desc-header .port-project-header {
+  font-weight: bold;
+  font-size: 1.6rem;
+  width: 25%;
+}
+@media (min-width:800px) {
+  .portfolio .port-project-description .port-project-desc-header .port-project-header {
+    width: 10%;
+  }
+}
+.portfolio .port-project-description .port-project-desc-header .port-project-text {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 75%;
+}
+@media (min-width:800px) {
+  .portfolio .port-project-description .port-project-desc-header .port-project-text {
+    width: 90%;
+  }
 }
 .contactInfo {
   background-image: url("../img/gl.jpg");
