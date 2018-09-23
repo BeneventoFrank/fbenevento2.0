@@ -218,11 +218,15 @@ body {
 }
 .fullViewOnly {
   display: none;
+  width: 100%;
 }
 @media (min-width:800px) {
   .fullViewOnly {
     display: inline-flex;
   }
+}
+.hidden {
+  display: none;
 }
 .mainSectionContent {
   display: flex;
@@ -421,6 +425,9 @@ body {
 .techList {
   line-height: 1.2;
   margin-left: 30px;
+}
+.fullWidth {
+  width: 100%;
 }
 .jobDivider {
   display: flex;
