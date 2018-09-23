@@ -155,7 +155,13 @@ body {
 }
 .vertLine {
   border-right: 1px solid #546A7B;
-  min-height: 120px;
+  min-height: 200px;
+  width: 1px;
+  align-self: center;
+}
+.shortVertLine {
+  border-right: 1px solid #546A7B;
+  min-height: 50px;
   width: 1px;
   align-self: center;
 }
