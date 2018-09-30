@@ -542,6 +542,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  flex-direction: column;
 }
 @media (min-width:800px) {
   .portfolio .port-image-section {
@@ -592,6 +593,15 @@ body {
   .portfolio .port-project-description .port-project-desc-header .port-project-text {
     width: 90%;
   }
+}
+.vs-text {
+  font-size: 1.8rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.port-dbl-header {
+  justify-content: center;
+  align-items: center;
 }
 .contactInfo {
   background-image: url("../img/gl.jpg");
