@@ -8,3 +8,5 @@ btn.addEventListener('click',(element)=>{
      list.forEach(e=>{e.classList.toggle('fullViewOnly')});
      btn.classList.add('hidden');
 })
+
+
