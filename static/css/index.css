@@ -616,6 +616,31 @@ body {
 .contactInfo p .name {
   font-size: xx-large;
 }
+.messageMeText {
+  font-size: 2rem;
+  padding-bottom: 15px;
+  padding-top: 50px;
+}
+.messageForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.messageBox {
+  height: 150px;
+  width: 400px;
+}
+.sendButton {
+  background-color: #333333;
+  color: white;
+  border-radius: 5px;
+  width: 75px;
+  height: 25px;
+  font-size: 1.6rem;
+  margin-top: 15px;
+}
 footer {
   width: 100%;
   background-color: #546A7B;
