@@ -228,6 +228,9 @@ body {
 .hidden {
   display: none;
 }
+.hiddenLink {
+  text-decoration: none;
+}
 .mainSectionContent {
   display: flex;
   flex-direction: column;
@@ -546,7 +549,6 @@ body {
 }
 @media (min-width:800px) {
   .portfolio .port-image-section {
-    justify-content: flex-start;
     width: auto;
   }
 }
