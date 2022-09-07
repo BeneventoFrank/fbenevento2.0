@@ -187,6 +187,15 @@ body {
   background-color: #546A7B;
   border-radius: 4px;
 }
+.sectionHeadingWide {
+  justify-content: center;
+  align-self: center;
+  width: 400px;
+  text-align: center;
+  background-color: #546A7B;
+  border-radius: 4px;
+}
+
 .sectionTitle {
   font-size: 4.5rem;
   color: white;
@@ -217,19 +226,19 @@ body {
   justify-content: center;
 }
 .fullViewOnly {
-  display: none;
+  display: inline-flex;
   width: 100%;
 }
-@media (min-width:800px) {
+@media (max-width:800px) {
   .fullViewOnly {
-    display: inline-flex;
+    display: none !important;
   }
 }
 .hidden {
   display: none;
 }
 .hiddenLink {
-  text-decoration: none;
+  text-decoration: underline;
 }
 .mainSectionContent {
   display: flex;
@@ -409,6 +418,7 @@ body {
 }
 .resumeSubHeader {
   font-size: 3rem;
+  width: 100%;
   font-weight: bold;
   margin-bottom: 25px;
 }
@@ -652,4 +662,18 @@ body {
 footer {
   width: 100%;
   background-color: #546A7B;
+}
+.addExpText{
+  display:block;
+  text-align: center;
+  width: 100%;
+  font-style: italic;
+  margin-bottom:60px;
+}
+.years{
+  font-size: 10px;
+  font-weight: bold;
+}
+.mb-60 {
+  margin-bottom: 60px;
 }

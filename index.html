@@ -48,41 +48,179 @@
                             </div>
                             <div class='aboutMeText'>
                                     <p class='helloWorld'>&lt;Hello World /&gt;</p>
-                                    <p >My name is <span class='callOuts'>Frank Benevento</span>, welcome to my small slice of the internet. I am a full-stack developer new to the San Francisco Bay area. I've been in this industry for over 17 years because I enjoy leveraging technology to solve problems.  </p>
-                                    <p >I enjoy working with various technologies such as <span class='callOuts'>Javascript</span>, <span class='callOuts'>Node.js</span>, <span class='callOuts'>Web API</span>, <span class='callOuts'>HTML</span> and I can NOT get enough <span class='callOuts'>Flexbox</span>. I'm a dependable employee with a strong work ethic and a desire to exceed expectations.</p>
-                                    <p >I believe in a work life balance, you kinda have to when you have two kids, a wife, and a busy schedule.  When I need down time, I usually turn to cycling or mountain biking.  </p>
+                                    <h1 class='resumeSubHeader'>Who Am I?</h1>
+                                    <section class='overview'>
+                                            <p >My name is <span class='callOuts'>Frank Benevento</span>, welcome to my small slice of the internet. I am a full-stack developer new to the San Francisco Bay area. I've been in this industry for over 20 years because I enjoy leveraging technology to solve problems. I believe in ownership of tasks and taking pride in your solutions.</p>
+                                            <p >I am a dependable employee with a strong work ethic and a desire to exceed expectations. Throughout my career, I have worn many hats. I started as a software developer right out of college and never looked back. While my career started in software development, it's led me down various avenues such as Project Management, IT Manager, and even to starting my own consulting company.</p>
+                                            <p >Thanks to my strong and diverse background, I am a very well rounded IT professional. I am ready to join the team and begin contributing.</p>
+                                    </section>
                             </div>                                 
                     </section>                                        
                 </section>
             </section>
 
             <div class='horizontalRight' data-aos-duration="1500" data-aos="fade-left" data-aos-anchor="#trigger-AboutMe">&nbsp;</div>            
-            <div id='trigger-Resume' id='resume' class='vertLine'>&nbsp;</div>            
-            <div class='sectionHeading' data-aos-duration="1000" data-aos="flip-left" data-aos-anchor="#trigger-Resume">
-                    <p id=resume class='sectionTitle'><a class='sectionTitle hiddenLink' href='./static/doc/FrankBeneventoResume.docx'>Resume</a></p>
+
+
+            <div id='trigger-Resume'  class='vertLine'>&nbsp;</div>            
+            <div class='sectionHeadingWide' data-aos-duration="1000" data-aos="flip-left" data-aos-anchor="#trigger-Resume">
+                    <p id=resume class='sectionTitle'>Current Projects</p>
             </div>            
+            
             <div class='shortVertLine'>&nbsp;</div>            
             <div class='horizontalLeft' data-aos-duration="1000" data-aos="fade-right" data-aos-anchor="#trigger-Resume">&nbsp;</div>
+            
             <section class='lineLeft'>
                 <section class='reduceForLines'>
                     <section class='resume' data-aos-duration="1000" data-aos="fade-left" data-aos-anchor="#trigger-Resume">
                         <div class='resumeContainer'>
 
-                            <h1 class='resumeSubHeader'>Who Am I?</h1>
-                            <section class='overview'>
-                                    <p class='resumeBlock'>Detail oriented software developer with 17+ years of experience designing and developing custom business solutions. I understand the demands of an IT shop at all levels and I am ready to contribute to the team. I believe in ownership of tasks and taking pride in your solutions.</p> 
-                            </section>
-
-
-                            <h1 class='resumeSubHeader'>My Current Projects</h1>
+                            <h1 class='resumeSubHeader'>What Am I Working On?</h1>
                             <section class='projects'>
-                                <p class='resumeBlock'><a class='link' target="blank" href="http://www.sylvento.com">SylVento</a> is a company I am starting with a good friend <a class="link" target="blank" href='https://www.linkedin.com/in/davissylvester/'>Davis Sylvester</a>. He and I have teamed up and have began working on our first project. Davis and I are working with a very talented artist, <a class='link' href='https://www.linkedin.com/in/maria-c-gantt-71422778/'>Maria Gantt</a>, on a promising time entry application built on React/Redux and Web API. We are currently offering software development services, so if you know anyone let us know.</p>
-                                <p class='resumeBlock'><a class='link' target="blank" href="https://github.com/BeneventoFrank/fbenevento2.0">fbenevento.com</a>:   After my first week at Lambda School, I started to redesign my website. I wanted to have a sandbox for working with HTML, CSS, Flexbox, and Javascript.  My original website was built using Vue.js however, I thought a Vue website was really overkill for what I needed.  I really just wanted a nice clean site that I could host my resume and contact info on. </p>
+                                <p class='resumeBlock'><a class='link' target="blank" href="https://www.shift-two.com">Shift-Two</a> is a small consulting company I co-founded with a great friend and mentor Daniel Hillis.  Shift-Two has kept me very busy but also helped me grow as a Software Engineer.  At Shift-Two, we leverage AWS technology to solve business problems.  Shift-Two is not a large company and never will be.  We are a small company that provides expert AWS consulting as well as production grade software solutions.  Working with Shift-Two over the last few years has really broadened my horizons as a developer.</p>
+                                <p class='resumeBlock'><a class='link' target="blank" href="https://www.pdhcare.com">pdhCare.com</a> is an application that helps people acquire approvals for Hospice care.  This project, while not my favorite from a technical perspective, certainly has a place in my heart.  Our solution has won two awards and is currently in use. This application has two components. The first is a simple <span class='callOuts'>Vue.js</span> website where people can go and learn about the program.  From here, they can log into the app which is also a <span class='callOuts'>Vue.js</span> frontend backed by <span class='callOuts'>AWS</span>.  We use <span class='callOuts'>Cognito</span> for authentication and for API concerns, we are leveraging an <span class='callOuts'>AWS-CDK</span> project that contains our <span class='callOuts'>Lambda Functions</span> and <span class='callOuts'>API Gateway</span> infrastructure.  For this project, we have used an <span class='callOuts'>Aurora Postgres</span> database also provided by <span class='callOuts'>AWS</span>.</p>
+                                <p class='resumeBlock'>I have worked on many projects, but one that I am most passionate about is a project we internally call 'Shift-Center'.  Shift-Center is an all in one call center solution that we are about to <span class='callOuts'>open source</span>.  Shift-Center is an <span class='callOuts'>AWS-CDK</span> project that I have built that allows a user to go from nothing, to a fully-featured and production ready call center environment in minutes.  This <span class='callOuts'>AWS</span> based solution begins with an <span class='callOuts'>Amazon Connect</span> instance.  With your instance in place, the <span class='callOuts'>CDK</span> project will build out the entire environment including, <span class='callOuts'>Lambdas</span>, <span class='callOuts'>Kinesis</span> data streams, <span class='callOuts'>S3</span> buckets, <span class='callOuts'>DynamoDB</span> tables, and even an <span class='callOuts'>API Gateway</span>.  Our solution offers Slack integration, voicemail transcription and delivery through email, as well as a directory to manage agents.</p>
                             </section> 
+                       </div>
+                    </section> 
+                </section>
+            </section>
+
+
+
+
+            <div class='horizontalLeft' data-aos-duration="1000" data-aos="fade-right" data-aos-anchor="#trigger-Resume">&nbsp;</div>
+
+            <div id='trigger-Resume'  class='vertLine'>&nbsp;</div>            
+            <div class='sectionHeading' data-aos-duration="1000" data-aos="flip-left" data-aos-anchor="#trigger-Resume">
+                    <p id=resume class='sectionTitle'><a class='sectionTitle hiddenLink' target="_blank" href='./static/doc/FrankBeneventoResume.docx.pdf'>Resume</a></p>
+            </div>            
+            
+            <div class='shortVertLine'>&nbsp;</div>            
+            <div class='horizontalRight' data-aos-duration="1000" data-aos="fade-right" data-aos-anchor="#trigger-Resume">&nbsp;</div>
+            
+            <section class='lineRight'>
+                <section class='reduceForLines'>
+                    <section class='resume' data-aos-duration="1000" data-aos="fade-left" data-aos-anchor="#trigger-Resume">
+                        <div class='resumeContainer'>
 
                             <h1 class='resumeSubHeader'>My Work Experience</h1>
                             <section class='jobContainer'>
-                                <section class='jobBlock' id='msiEmp'>
+
+                                <section class='jobBlock' id='vcEmp'>
+
+                                    <div class='jobBlockHeader'>
+                                        <div class='shrinkHeader'>
+                                            <p class='jobHeader'>Senior Software Engineer</p>
+                                            <p class='jobSubHeader'>Verify Comply</p>
+                                        </div>
+                                        <div class='shrinkHeader'>
+                                            <p class='jobSubHeader'>Mar 2020 - Present</p>
+                                            <p class='jobSubHeader'>100% Remote</p>
+                                        </div>
+                                    </div>
+                                    <section class='techStackSection'>
+                                            <div>
+                                                <p>Technology Stack:</p>
+                                            </div>
+                                            <div>
+                                                <div class='techlistContainer'>
+                                                    <ul class='jobResponsibilitiesList'>
+                                                        <li>Day to day experience with <span class='callOuts'>Vue.js</span>, <span class='callOuts'>JavaScript</span>, <span class='callOuts'>HTML/CSS</span>, <span class='callOuts'>Feather.js</span>, <span class='callOuts'>MSSQL</span>, <span class='callOuts'>WebWorkers</span>, <span class='callOuts'>AWS Connect</span>, <span class='callOuts'>Lambda</span>, <span class='callOuts'>S3</span>, <span class='callOuts'>AWS Amplify</span></li>
+                                                    </ul>
+                                                </div>                                            
+                                            </div>
+                                    </section>
+                                    <p id='trigger-vc-divider'>Experience:</p>                            
+                                    <div>
+                                        <ul class='jobResponsibilitiesList'>
+                                            <li>Introduced <span class='callOuts'>AWS Connect</span> technology to the company spawning an entirely new product line for Verify Comply.</li>
+                                            <li>Built both public and internal facing <span class='callOuts'>Vue.js</span> applications to service the new business line. These applications utilize <span class='callOuts'>AWS</span> for backend operations.  <span class='callOuts'>Cognito</span> provides <span class='callOuts'>SSO</span> while the rest of the backend is managed through an <span class='callOuts'>AWS-CDK</span> project. <span class='callOuts'>CDK-Pipelines</span> are used to provide <span class='callOuts'>CICD</span>.</li>
+                                            <li>Migrated flagship application from Classic <span class='callOuts'>ASP/.Net</span> driven architecture to a modern <span class='callOuts'>Vue.js</span> application backed by <span class="callOuts">MSSQL and <span class="callOuts">Feathers.js.</li>
+                                            <li>Designed and Implemented custom <span class='callOuts'>AWS</span> based solution replacing functionality which was causing many support calls. My design replaced the existing <span class="callOuts">WebWorker</span> with <span class="callOuts">Lambda Functions</span>. I was able to offload the processing to the <span class="callOuts">Lambda Functions</span> and produce a stable experience for the customer. </li>
+                                            <li>Established new <span class='callOuts'>Zoho</span> data integration for all billing needs.  This integration is responsible for managing all new and existing customer subscriptions.  </li>
+                                            <li>Designed a custom data grid solution using <span class='callOuts'>AG-Grid</span>. The implementation I provided, allows for the seamless switching of server-side rendering to client-side rendering depending on data size as well as custom paging and filtering. </li>
+                                            <li>Offered and implemented suggestions to help improve efficiencies on all levels.  Personally responsible for many new system features that have become part of the standard product.</li>
+
+                                        </ul>                                            
+                                    </div>                                                 
+                                </section>
+
+                                <section class='mobileViewOnly mb-60'>
+                                        <a class='addJobExp' id='showAddJobExp' href="#" onclick="return(false)">View Additional Experience</a>
+                                </section>
+
+                                <section class='fullViewOnly fullWidth'>
+                                    <div class='jobDivider '>
+                                        <div class='jobDividerBlock'>
+                                            &nbsp;
+                                        </div>
+                                        <div class='jobDividerBlock jobDividerBlockLiner' data-aos-duration="2500" data-aos="fade-right" data-aos-anchor="#trigger-vc-divider">
+                                            &nbsp;
+                                        </div>
+                                        <div class='jobDividerBlock jobDividerBlockLiner' data-aos-duration="2500" data-aos="fade-left" data-aos-anchor="#trigger-vc-divider">
+                                            &nbsp;
+                                        </div>
+                                        <div class='jobDividerBlock'>
+                                            &nbsp;
+                                        </div>
+                                    </div>
+                                </section>                                
+
+                                <section class='fullViewOnly jobBlock' id='maxEmp'>
+                                    <div class='jobBlockHeader'>
+                                        <div class='shrinkHeader'>
+                                            <p class='jobHeader'>Senior Software Engineer</p>
+                                            <p class='jobSubHeader'>Max Digital</p>
+                                        </div>
+                                        <div class='shrinkHeader'>
+                                            <p class='jobSubHeader'>Dec 2018 - Mar 2020 <span class="callOuts">(1yr 3mos)</span></p>
+                                            <p class='jobSubHeader'>100% Remote</p>
+                                        </div>
+                                    </div>
+                                    <section class='techStackSection'>
+                                            <div>
+                                                <p>Technology Stack:</p>
+                                            </div>
+                                            <div>
+                                                <div class='techlistContainer'>
+                                                    <ul class='jobResponsibilitiesList'>
+                                                        <li>Day to day experience with technologies such as <span class="callOuts">JavaScript</span>, <span class="callOuts">AWS SNS/SQS</span>, <span class="callOuts">Vue.js</span>, <span class="callOuts">HTML/CSS</span></li>
+                                                        <li>Additional production experience with <span class="callOuts">C#</span>, <span class="callOuts">MVC</span></li>
+                                                    </ul>
+                                                </div>                                            
+                                            </div>
+                                    </section>
+                                    <p id='trigger-max-divider'>Experience:</p>                            
+                                    <div>
+                                        <ul class='jobResponsibilitiesList'>
+                                            <li>Worked with a close team of Business leaders and Project Managers to build the next evolution of the company’s reporting platform. </li>
+                                            <li>Provided UI for the new reporting platform as well as solely maintained it. My role was to provide all support and environmental configuration needed to meet goals.  </li>
+                                            <li>Built and maintained the email subscription system used to auto-generate reporting and deliver it on schedule. </li>
+                                            <li>Designed and delivered Vue.js features for the rewrite of the original business system. My role was to utilize specs and deliver the design.  </li>
+                                            <li>Maintained and provided features for the flagship application.  This <span class="callOuts">C#/MVC</span> application leverages many of Amazon's services. My first task was to breathe a bit of new life into their publishing engine. This code had not been modified for years out of fear. Through <span class="callOuts">AWS SNS/SQS</span> services, I was able to provide a solid solution bridging the gap between the old system and the new while meeting client requirements.</li>
+                                        </ul>                                            
+                                    </div>                                                 
+                                </section>
+                                <section class='fullViewOnly fullWidth'>
+                                    <div class='jobDivider '>
+                                        <div class='jobDividerBlock'>
+                                            &nbsp;
+                                        </div>
+                                        <div class='jobDividerBlock jobDividerBlockLiner' data-aos-duration="2500" data-aos="fade-right" data-aos-anchor="#trigger-max-divider">
+                                            &nbsp;
+                                        </div>
+                                        <div class='jobDividerBlock jobDividerBlockLiner' data-aos-duration="2500" data-aos="fade-left" data-aos-anchor="#trigger-max-divider">
+                                            &nbsp;
+                                        </div>
+                                        <div class='jobDividerBlock'>
+                                            &nbsp;
+                                        </div>
+                                    </div>
+                                </section>                                
+
+
+                                <section class='fullViewOnly jobBlock' id='msiEmp'>
 
                                     <div class='jobBlockHeader'>
                                         <div class='shrinkHeader'>
@@ -101,35 +239,32 @@
                                             <div>
                                                 <div class='techlistContainer'>
                                                     <ul class='jobResponsibilitiesList'>
-                                                        <li>Day to day experience with technologies such as JavaScript, HTML/CSS/FlexBox, SQL, Node.js</li>
-                                                        <li>Additional production experience with C#, MVC, Feathers.js</li>
+                                                        <li>Day to day experience with technologies such as <span class="callOuts">JavaScript</span>, <span class="callOuts">HTML/CSS</span>, <span class="callOuts">MSSQL</span>, <span class="callOuts">Node.js</span>, <span class="callOuts">Feather.js</span></li>
+                                                        <li>Additional production experience with C#, MVC</li>
                                                     </ul>
                                                 </div>                                            
                                             </div>
                                     </section>
-                                    <p id='trigger-sniDivider'>Experience:</p>                            
+                                    <p id='trigger-msiDivider'>Experience:</p>                            
                                     <div>
                                         <ul class='jobResponsibilitiesList'>
-                                            <li>Filled the role of back-end developer for the entire team providing Web API endpoints using Feathers.js and JavaScript. Data access was provided via stored procs. As part of my role, it was my responsibility to analyze the DB schema and provide sub-second stored procs.</li>
-                                            <li>Responsible for design and implementation of online QC to handle the workload of the companys largest client.  Leveraging C# / ASP.net, I was able to create a QC system resulting in an increase of completions. At the highest point, the production through-put increased to 3000 a day from 700. </li>
-                                            <li>Created Work Order assignment process utilized in over 95% of all Work Orders created in the company. This project was great because it allowed the freedom to design and implement everything from the ground up.  Using HTML/CSS JavaScript, I provided realtime metrics to management through a dashboard. This dashboard was connected to a c# and SQL backend. </li>
-                                            <li>As one of the more senior members of my team, I was responsible for maintaining and creating all builds. My builds accounted for all the continuous integration as well as the bi-weekly production deployments.   </li>                                            
-                                            <li>At the request of the CEO, relocated temporarily to assemble and manage a remote IT department.  My responsibilities included, interviewing, hiring and managing. This was a great opportunity for me, as well as my career, to grow.  My department ran successfully and ended up taking on full time support for half of the business lines.</li>
+                                            <li>Filled the role of back-end developer for the entire team providing <span class="callOuts">Web API</span> endpoints using <span class="callOuts">Feathers.js</span> and <span class="callOuts">JavaScript</span>. Data access was provided via stored procs. As part of my role, it was my responsibility to analyze the database schema and provide sub-second stored procs.</li>
+                                            <li>Responsible for design and implementation of online QC to handle the workload of the company’s largest client. Leveraging <span class="callOuts">C#/ASP.NET</span>, I was able to create a QC system resulting in an increase of completions. At the highest point, the production through-put increased to 3000 a day from 700.</li>
+                                            <li>Created Work Order assignment process utilized in over 95% of all Work Orders created in the company. This project was great because it allowed the freedom to design and implement everything from the ground up. Using <span class="callOuts">HTML/CSS JavaScript</span>, I provided real-time metrics to management through a dashboard. This dashboard was connected to a <span class="callOuts">C#</span> and <span class="callOuts">MSSQL</span> backend.</li>
+                                            <li>As one of the more senior members of my team, I was responsible for maintaining and creating all builds. My builds accounted for all the continuous integration as well as the bi-weekly production deployments.</li>                                            
+                                            <li>At the request of the CEO, relocated temporarily to assemble and manage a remote IT department. My responsibilities included interviewing, hiring, and managing. This was a great opportunity for me, as well as my career, to grow. My department ran successfully and ended up taking on full time support for half of the business lines.</li>
                                         </ul>                                            
                                     </div>                                                 
-                                </section>
-                                <section class='mobileViewOnly'>
-                                        <a class='addJobExp' id='showAddJobExp' href="#" onclick="return(false)">View Additional Experience</a>
                                 </section>
                                 <section class='fullViewOnly fullWidth'>
                                     <div class='jobDivider '>
                                         <div class='jobDividerBlock'>
                                             &nbsp;
                                         </div>
-                                        <div class='jobDividerBlock jobDividerBlockLiner' data-aos-duration="2500" data-aos="fade-right" data-aos-anchor="#trigger-sniDivider">
+                                        <div class='jobDividerBlock jobDividerBlockLiner' data-aos-duration="2500" data-aos="fade-right" data-aos-anchor="#trigger-msiDivider">
                                             &nbsp;
                                         </div>
-                                        <div class='jobDividerBlock jobDividerBlockLiner' data-aos-duration="2500" data-aos="fade-left" data-aos-anchor="#trigger-sniDivider">
+                                        <div class='jobDividerBlock jobDividerBlockLiner' data-aos-duration="2500" data-aos="fade-left" data-aos-anchor="#trigger-msiDivider">
                                             &nbsp;
                                         </div>
                                         <div class='jobDividerBlock'>
@@ -139,179 +274,79 @@
                                 </section>
 
                                 
-                                <section class='fullViewOnly' id='sniEmp'>
-                                        <div class='jobBlock'>
-                                            <div class='jobBlockHeader'>
-                                                <div class='shrinkHeader'>
-                                                    <p class='jobHeader'>Web Application Developer</p>
-                                                    <p class='jobSubHeader'>Seneca Nation Of Indians</p>
-                                                </div>
-                                                <div class='shrinkHeader'>
-                                                    <p class='jobSubHeader'>Oct 2009 - Sept 2011 <span class="callOuts">(2yrs)</span></p>
-                                                    <p class='jobSubHeader'>Salemanca, NY</p>
-                                                </div>
-                                            </div>
-                                        
-        
-                                            <section class='techStackSection'>
-                                                    <div>
-                                                        <p>Technology Stack:</p>
-                                                    </div>
-                                                    <div>
-                                                        <div class='techlistContainer'>
-                                                            <ul class='jobResponsibilitiesList'>
-                                                                <li>Day to day experience with the following technologies ASP.NET, C#, HTML/CSS,SQL, JavaScript</li>
-                                                            </ul>
-                                                        </div>                                            
-                                                    </div>
-                                            </section>
-                                            <p id='trigger-symDivider'>Experience:</p>                            
-                                            <div>
-                                                <ul class='jobResponsibilitiesList'>
-                                                    <li>Operated as the sole developer within the IT department. As the only developer, it was my primary responsibility to gather specs, design and implement all of my solutions.</li>
-                                                    <li>Designed and created inter-office status communications tool.  Written in C#, Html and SQL, this tool provided realtime status information between departments.</li>
-                                                    <li>Provided user-friendly reporting used by senior staff for executive status updates.</li>
-                                                    <li>Created internal and external news and announcements resources. These sites function as a central point for news, documents, announcements etc.</li>
-                                                    <li>Developed administrator tools to allow users to maintain their own content.</li>
-                                                    <li>Responsible for working with department directors creating individual public facing sites designed to increase awareness of projects and overall department services.</li>
-                                                    <li>Created central repository of information to ensure all departments and applications use the standardized data.</li>
-                                                    <li>Supported all operations of the Seneca Nation IT department.</li>                                                
-                                                </ul>                                            
-                                            </div>                                                 
-                                        </div>                                            
-                                </section>
-                                <section class='fullViewOnly  fullWidth'>
-                                    <div class='jobDivider'>
-                                        <div class='jobDividerBlock'>
-                                            &nbsp;
+                                <section class='fullViewOnly jobBlock' id='sniEmp'>
+                                    
+                                    <div class='jobBlockHeader'>
+                                        <div class='shrinkHeader'>
+                                            <p class='jobHeader'>Web Application Developer</p>
+                                            <p class='jobSubHeader'>Seneca Nation Of Indians</p>
                                         </div>
-                                        <div class='jobDividerBlock jobDividerBlockLiner' data-aos-duration="2500" data-aos="fade-right" data-aos-anchor="#trigger-symDivider">
-                                            &nbsp;
-                                        </div>
-                                        <div class='jobDividerBlock jobDividerBlockLiner' data-aos-duration="2500" data-aos="fade-left" data-aos-anchor="#trigger-symDivider">
-                                            &nbsp;
-                                        </div>
-                                        <div class='jobDividerBlock'>
-                                            &nbsp;
+                                        <div class='shrinkHeader'>
+                                            <p class='jobSubHeader'>Oct 2009 - Sept 2011 <span class="callOuts">(2yrs)</span></p>
+                                            <p class='jobSubHeader'>Salemanca, NY</p>
                                         </div>
                                     </div>
+
+                                    <section class='techStackSection'>
+                                            <div>
+                                                <p>Technology Stack:</p>
+                                            </div>
+                                            <div>
+                                                <div class='techlistContainer'>
+                                                    <ul class='jobResponsibilitiesList'>
+                                                        <li>Day to day experience with the following technologies ASP.NET, C#, HTML/CSS,SQL, JavaScript</li>
+                                                    </ul>
+                                                </div>                                            
+                                            </div>
+                                    </section>
+                                    <p id='trigger-symDivider'>Experience:</p>                            
+                                    <div>
+                                        <ul class='jobResponsibilitiesList'>
+                                            <li>Operated as the sole developer within the IT department. As the only developer, it was my primary responsibility to gather specs, design and implement all of my solutions.</li>
+                                            <li>Designed and created inter-office status communications tool.  Written in <span class="callOuts">C#</span>, <span class="callOuts">HTML</span> and <span class='callOuts'>MSSQL</span>, this tool provided realtime status information between departments.</li>
+                                            <li>Provided user-friendly reporting used by senior staff for executive status updates.</li>
+                                            <li>Created internal and external news and announcements resources. These sites function as a central point for news, documents, announcements etc.</li>
+                                            <li>Developed administrator tools to allow users to maintain their own content.</li>
+                                            <li>Responsible for working with department directors creating individual public facing sites designed to increase awareness of projects and overall department services.</li>
+                                            <li>Created central repository of information to ensure all departments and applications use the standardized data.</li>
+                                            <li>Supported all operations of the Seneca Nation IT department.</li>                                                
+                                        </ul>                                            
+                                    </div>                                                 
                                 </section>
 
+                                <p class="fullViewOnly addExpText">Additional Experience Available Upon Request</p>
 
-                                <section class='fullViewOnly' id='symEmp'>
-                                    <div class='jobBlock'>
-                                        <div class='jobBlockHeader'>
-                                            <div class='shrinkHeader'>
-                                                <p class='jobHeader'>Web Application Developer</p>
-                                                <p class='jobSubHeader'>Symbio Solutions</p>
-                                            </div>
-                                            <div class='shrinkHeader'>
-                                                <p class='jobSubHeader'>Nov 2004 - Sept 2009 <span class="callOuts">(5yrs)</span></p>
-                                                <p class='jobSubHeader'>Dallas, TX</p>
-                                            </div>
-                                        </div>
-                                        <section class='techStackSection'>
-                                                <div>
-                                                    <p>Technology Stack:</p>
-                                                </div>
-                                                <div>
-                                                    <div class='techlistContainer'>
-                                                        <ul class='jobResponsibilitiesList'>
-                                                            <li>Day to day experience with C#,ASP.Net, HTML/CSS, SQL, ASP </li>
-                                                        </ul>
-                                                    </div>                                            
-                                                </div>
-                                        </section>
-                                        <p id='trigger-emsDivider'>Experience:</p>                            
-                                        <div>
-                                            <ul class='jobResponsibilitiesList'>
-                                                <li>Designed and developed multiple billing systems.</li>
-                                                <li>Responsible for providing maintenance and enhancements to all billing systems as well as various user interfaces.</li>
-                                                <li>Supplied management as well as users with problem resolution by means of data research and analysis.</li>
-                                                <li>Worked within a team environment offering insight into the design of user interfaces.</li>
-                                                <li>Developed fully functional user interfaces with or without specifications.</li>
-                                                <li>Provided account managers with the tools to effectively manage their accounts post implementation.</li>
-                                                <li>Supported in-house personnel during key events resolving issues and ensuring success.</li>
-                                                <li>Maintained and provided multiple upgrades to company software.</li>
-                                                <li>Operated as a resource to new employees contributing answers based on experience.</li>
-                                            </ul>                                            
-                                        </div>  
-                                    </div>                                                
+
+                                <h1 class='resumeSubHeader'>My Beginning</h1>
+                                <section class="mb-60">
+                                    <p class='jobHeader'>Texas State Technical College <span class="years">(1998-2000)</span></p>
+                                    <p>Associates of Applied Science, Major in Computer Science Technology</p>                            
+                                    <div>
+                                        <ul class='jobResponsibilitiesList'>
+                                            <li>GPA:  3.957</li>
+                                            <li>Honors:  President’s Honor Roll (5 times), Dean’s Honor Roll (1 time)</li>
+                                        </ul>                                            
+                                    </div>
+                                    <br />
+                                    <p class='jobHeader'>United States Army <span class="years">(1995-1998)</span></p>
+                                    <p>Communications expert responsible for calling for, and controlling,  indirect fire</p>                            
                                 </section>
-                                <section class='fullViewOnly fullWidth'>
-                                    <div class='jobDivider'>
-                                        <div class='jobDividerBlock'>
-                                            &nbsp;
-                                        </div>
-                                        <div class='jobDividerBlock jobDividerBlockLiner' data-aos-duration="2500" data-aos="fade-right" data-aos-anchor="#trigger-emsDivider">
-                                            &nbsp;
-                                        </div>
-                                        <div class='jobDividerBlock jobDividerBlockLiner' data-aos-duration="2500" data-aos="fade-left" data-aos-anchor="#trigger-emsDivider">
-                                            &nbsp;
-                                        </div>
-                                        <div class='jobDividerBlock'>
-                                            &nbsp;
-                                        </div>
-                                    </div>                                        
-                                </section>
-
-
-                                <section class='fullViewOnly' id='emsEmp'>
-                                    <div class='jobBlock'>
-                                        <div class='jobBlockHeader'>
-                                            <div class='shrinkHeader'>
-                                                <p class='jobHeader'>Implementations Programmer</p>
-                                                <p class='jobSubHeader'>A4 HealthMatics Emstat</p>
-                                            </div>
-                                            <div class='shrinkHeader'>
-                                                <p class='jobSubHeader'>Nov 2000 - Sept 2004 <span class="callOuts">(4yrs 9mo)</span></p>
-                                                <p class='jobSubHeader'>Austin, TX</p>
-                                            </div>
-                                        </div>
-                                        <section class='techStackSection'>
-                                                <div>
-                                                    <p>Technology Stack:</p>
-                                                </div>
-                                                <div>
-                                                    <div class='techlistContainer'>
-                                                        <ul class='jobResponsibilitiesList'>
-                                                            <li>Day to day experience with ASP, SQL, HTML/CSS, TCL/TK </li>
-                                                        </ul>
-                                                    </div>                                            
-                                                </div>
-                                        </section>
-                                        <p id='trigger-emsDivider'>Experience:</p>                            
-                                        <div>
-                                            <ul class='jobResponsibilitiesList'>
-                                                <li>Installed and configured EmSTAT software for new clients to include working onsite to ensure a smooth transition into a live environment.</li>
-                                                <li>Customized EmSTAT product to better suit customer needs.</li>
-                                                <li>Consistently met company deadlines for project completion.</li>
-                                                <li>Worked with developers to add functionality to and debug existing product.</li>
-                                                <li>Worked with account managers to define installation processes.</li>
-                                                <li>Performed routine maintenance for existing clients.</li>
-                                                <li>Handled front line technical support for existing customer base.</li>
-                                                <li>Assisted in training employees on handling customer support calls.</li>                                                           
-                                            </ul>                                            
-                                        </div>                                                 
-                                    </div>                                        
-                                </section> 
                             </section>
                         </div>
                     </section> 
                 </section>
             </section>
-            <div id='trigger-reco' class='horizontalLeft' data-aos-duration="1000" data-aos="fade-right" data-aos-anchor="#trigger-reco">&nbsp;</div>
-            <div class='vertLine'>&nbsp;</div>            
+            
+            <div id='trigger-reco' class='horizontalRight' data-aos-duration="1000" data-aos="fade-right" data-aos-anchor="#trigger-reco">&nbsp;</div>
+            <div class='vertLine'>&nbsp;</div>    
+            
             <div class='sectionHeading lg' data-aos-duration="1000" data-aos="flip-right" data-aos-anchor="#trigger-reco">
                     <p id='recomend' class='sectionTitle'>Recommendations</p>
             </div>            
             <div id='trigger-reco' class='shortVertLine'>&nbsp;</div> 
-            <div class='horizontalRight' data-aos-duration="1000" data-aos="fade-left" data-aos-anchor="#trigger-reco">&nbsp;</div>
-            <section class='lineRight'>
+            <div class='horizontalLeft' data-aos-duration="1000" data-aos="fade-left" data-aos-anchor="#trigger-reco">&nbsp;</div>
+            <section class='lineLeft'>
                 <section class='reduceForLines'>
-
-
-
                     <section class='recommendations-mobile' data-aos-duration="1000" data-aos="fade-right" data-aos-anchor="#trigger-reco">
                         <div class='reco-column-padding'>
                             <div class='reco-columns-mobile'>
@@ -376,144 +411,10 @@
                             </div>
                         </div>
                     </section>                                        
-
-                    
-
-                                      
                 </section>
             </section>
-            <div id='trigger-portfolio' class='horizontalRight' data-aos-duration="1000" data-aos="fade-left" data-aos-anchor="#trigger-portfolio">&nbsp;</div>
-            <div id='resume' class='vertLine'>&nbsp;</div>            
-
-
-
-
-
-
-
-            <div class='sectionHeading' data-aos-duration="1000" data-aos="flip-left" data-aos-anchor="#trigger-portfolio">
-                <p id='portfolio' class='sectionTitle'>Portfolio</p>
-            </div>            
-            <div class='shortVertLine'>&nbsp;</div> 
-            <div class='horizontalLeft' data-aos-duration="1000" data-aos="fade-right" data-aos-anchor="#trigger-portfolio">&nbsp;</div>
-            <section class='lineLeft'>
-                <section class='reduceForLines'>
-
-                    <section class='portfolio' data-aos-duration="1000" data-aos="fade-left" data-aos-anchor="#trigger-portFolio">
-                        <div>
-                            <div class="port-image-and-text">
-                                <section class='port-image-section'>
-                                    <a target="blank" href="https://sj.fbenevento.com"><img class='port-proj-image' src="./static/img/gif/sj.gif" alt="https://sj.fbenevento.com"></a> 
-                                    <p class='vs-text'>SJ Industries</p>
-                                    <p class='vs-text'>- VS - </p>
-                                    <p class='vs-text'>Vandelay Industries</p>
-                                    <a target="blank" href="https://vi.fbenevento.com"><img class='port-proj-image' src="./static/img/gif/vi.gif" alt="https://vi.fbenevento.com"></a>                                     
-                                </section>
-                                <div class='port-project-description port-dbl-header'>
-                                    <div class='port-project-desc-header'>
-                                        <div class='port-project-header'><p>Project:</p></div>
-                                        <div class='port-project-text'>
-                                            <p>Last week was 'project week' at Lambda School and we were asked to translate a design file into a website. We were given only a few days to complete this task which made it a bit of a challenge.  I found myself a little unsatisfied with the design but I was bound to the project restrictions.  I created a rival site called 'Vandelay Industries' (thanks George!). This allowed me a chance to explore the parallax affect with CSS.' </p>
-                                        </div>
-                                    </div>
-                                    <div id='trigger-fbenDivider' class='port-project-desc-header'>
-                                        <div class='port-project-header'><p>Tech:</p></div>
-                                        <div class='port-project-text'><p>HTML, Javascript, Less and FlexBox</p></div>
-                                    </div>
-                                    <div class='port-project-desc-header'>
-                                        <div class='port-project-header'><p>Repo:</p></div>
-                                        <div class='port-project-text' data-aos-duration="1000" data-aos="fade-left">
-                                            <p>SJ Industries - <a class="link" target="blank" href="https://github.com/BeneventoFrank/User-Interface-Project-Week">GitHub</a></p>
-                                            <p>Vandelay Industeries - <a class="link" target="blank" href="https://github.com/BeneventoFrank/vandelay">GitHub</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <section class='jobDivider port-divider'>
-                                    <div class='jobDividerBlock'>
-                                        &nbsp;
-                                    </div>
-                                    <div class='jobDividerBlock jobDividerBlockLiner' data-aos-duration="2500" data-aos="fade-right" data-aos-anchor="#trigger-fbenDivider">
-                                        &nbsp;
-                                    </div>
-                                    <div class='jobDividerBlock jobDividerBlockLiner' data-aos-duration="2500" data-aos="fade-left" data-aos-anchor="#trigger-fbenDivider">
-                                        &nbsp;
-                                    </div>
-                                    <div class='jobDividerBlock'>
-                                        &nbsp;
-                                    </div>
-                            </section>      
-
-                            <div class="port-image-and-text">
-                                <section class='port-image-section'>
-                                    <a target="blank" href="http://www.sylvento.com"><img class='port-proj-image' src="./static/img/gif/sylvento.gif" alt="SylVento"></a> 
-                                </section>
-                                <div class='port-project-description'>
-                                    <div class='port-project-desc-header'>
-                                        <div class='port-project-header'><p>Project:</p></div>
-                                        <div class='port-project-text'><p>I have teamed up with a good friend of mine, <a class="link" href='https://www.linkedin.com/in/davissylvester/'>Davis Sylvester</a>, and we are starting up a company called SylVento.  <a class='link' href='http://www.sylvento.com'>SylVento</a> will primarily be a software development shop but we are kicking around alot of ideas. We are currently working with a very talented artist <a class='link' href='https://www.linkedin.com/in/maria-c-gantt-71422778/'>Maria Gantt</a> to develop a time tracking platform.</p></div>
-                                    </div>
-                                    <div id='trigger-fbenDivider' class='port-project-desc-header'>
-                                        <div class='port-project-header'><p>Tech:</p></div>
-                                        <div class='port-project-text'><p>React/Redux, Web API, Less and FlexBox</p></div>
-                                    </div>
-                                    <div class='port-project-desc-header'>
-                                        <div class='port-project-header'><p>Repo:</p></div>
-                                        <div class='port-project-text' data-aos-duration="1000" data-aos="fade-left"><p> Private Repo</a></p></div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <section class='jobDivider port-divider'>
-                                    <div class='jobDividerBlock'>
-                                        &nbsp;
-                                    </div>
-                                    <div class='jobDividerBlock jobDividerBlockLiner' data-aos-duration="2500" data-aos="fade-right" data-aos-anchor="#trigger-fbenDivider">
-                                        &nbsp;
-                                    </div>
-                                    <div class='jobDividerBlock jobDividerBlockLiner' data-aos-duration="2500" data-aos="fade-left" data-aos-anchor="#trigger-fbenDivider">
-                                        &nbsp;
-                                    </div>
-                                    <div class='jobDividerBlock'>
-                                        &nbsp;
-                                    </div>
-                            </section>
-                            <div class="port-image-and-text">
-                                <section class='port-image-section'>
-                                    <a target="blank" href="https://www.fbenevento.com"><img class='port-proj-image' src="https://media.giphy.com/media/5YupveLQO1VCCQR2KD/giphy.gif" alt="www.fbenevento.com"></a> 
-                                </section>
-                                <div class='port-project-description'>
-                                    <div class='port-project-desc-header'>
-                                        <div class='port-project-header'><p>Project:</p></div>
-                                        <div class='port-project-text'><p>fbenevento is a fun project that I like to spend some time on. It allows me to be a little creative and share some of my projects.</p></div>
-                                    </div>
-                                    <div class='port-project-desc-header'>
-                                        <div class='port-project-header'><p>Tech:</p></div>
-                                        <div class='port-project-text'><p>HTML, Less, FlexBox</p></div>
-                                    </div>
-                                    <div id='trigger-Contact' class='port-project-desc-header'>
-                                        <div class='port-project-header'><p>Repo:</p></div>
-                                        <div class='port-project-text' data-aos-duration="1000" data-aos="fade-left"><p><a class="link" target="blank" href="https://github.com/BeneventoFrank/fbenevento2.0">GitHub</a></p></div>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-
-        
-                    </section>
-                    
-                </section>
-            </section>
-            <div class='horizontalLeft' data-aos-duration="1000" data-aos="fade-right" data-aos-anchor="#trigger-Contact">&nbsp;</div>
-            <div id='resume' class='vertLine'>&nbsp;</div>            
-
-
-
-
-
-
-
-
+            <div id='trigger-portfolio' class='horizontalLeft' data-aos-duration="1000" data-aos="fade-left" data-aos-anchor="#trigger-portfolio">&nbsp;</div>
+            <div  class='vertLine'>&nbsp;</div>            
 
             <div class='sectionHeading' data-aos-duration="1000" data-aos="flip-left" data-aos-anchor="#trigger-Contact">
                     <p id='contact' class='sectionTitle'>Contact</p>
