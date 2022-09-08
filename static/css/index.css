@@ -234,6 +234,9 @@ body {
     display: none !important;
   }
 }
+.visible{
+  display:flex;
+}
 .hidden {
   display: none;
 }
@@ -676,4 +679,108 @@ footer {
 }
 .mb-60 {
   margin-bottom: 60px;
+}
+.dflex{
+  width: 100%;
+  display:flex;
+}
+.dflex-top-row{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+}
+.dflex-between-row{
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dflex-center-row{
+  width: 100%; display:flex; justify-content: center; align-items: center;
+}
+.dflex-center-row-top {
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.dflex-right-bottom-row{
+  width: 100%;
+  display:flex;
+  justify-content: flex-end;
+  align-items:flex-end;
+}
+.dflex-center-col{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+.dflex-top-col{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.dflex-top-left-col{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}
+.dflex-right-col{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.dflex-left-col{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.dflex-center-col-top{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items: center;    
+}
+.dflex-left-col-top{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items: flex-start;    
+}
+.dflex-left-row{
+  width:100%;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.dflex-right-row{
+  width:100%;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.space-between{
+  justify-content: space-between;
+}
+.lblMessage{
+  min-height: 100px;
+  padding-top:30px;
+}
+.pointer{
+  cursor: pointer;
 }

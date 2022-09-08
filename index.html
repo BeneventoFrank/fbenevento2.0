@@ -428,15 +428,12 @@
                         data-aos="fade-right"
                         data-aos-anchor="#trigger-Contact">
                         <p class='name'>Frank Benevento</p>
-
-                        <form class='messageForm' method='POST' action='https://formspree.io/frankbenevento123@gmail.com'>
+                        <div class="dflex-center-col">
                             <label class='messageMeText'>Message Me:</label>
-                            <textarea class='messageBox' name='message'></textarea>
-                            <button class='sendButton' type='submit'>Send</button>
-                        </form>
-
-
-
+                            <textarea placeholder="Message Me" id="txtMessage" class='messageBox' name='message'></textarea>
+                            <label id="lblRequired" class='lblMessage'>&nbsp;</label>
+                            <button id="btnSubmit" class='sendButton mb-60 pointer' type='submit'>Send</button>
+                        </div>
                     </section>                                        
                 </section>
             </section>
@@ -445,6 +442,7 @@
         </section>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
       AOS.init({});
     </script>
